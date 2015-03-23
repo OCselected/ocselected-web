@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Fedora Workstation')}</title>
+  </head>
+  <body id="workstation">
+
+  <xi:include href="../../templates/workstation/header.html" />
+
+  <header id="head">
+    <div class="jumbotron header-splash">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-1 text-left">
+            <h1>${_('This is the Linux workstation you\'ve been waiting for.')}</h1>
+              <p><a class="btn btn-success" href="./download/" role="button">${_('Download now')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="jumbotron product-definition">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <p>${_('Fedora Workstation is a reliable, user-friendly, and powerful operating system for your laptop or desktop computer. It supports a wide range of developers, from hobbyists and students to professionals in corporate environments.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron product-testimonial">
+    <div class="container text-center">
+          <blockquote class="row">
+		    <div class="col-md-5 col-md-offset-7">
+              <p>${Markup(_('&ldquo;The plethora of tools provided by&lt;br /&gt; Fedora allows me to get the job done.&lt;br /&gt; It just works.&rdquo;'))}</p>
+              <footer><cite>Christine Flood, ${_('JVM performance engineer')}</cite></footer>
+            </div>
+          </blockquote>
+    </div>
+  </div>
+
+  <!-- Feature: GNOME3 -->
+  <div class="jumbotron product-feature gnome3">
+    <div class="container">
+      <div class="row">
+	    <div class="col-md-6 caption">
+	      <h3>${_('Sleek user interface')}</h3>
+	      <p>${_('Focus on your code in the GNOME 3 desktop environment. GNOME is built with developer feedback and minimizes distractions, so you can concentrate on what\'s important.')}</p>
+        </div>
+        <div class="col-md-6 screenshot">
+	      <img src="/static/images/workstation/workstation-features-gnome3.png" />
+	    </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature: Tools -->
+  <div class="jumbotron product-feature copr">
+  <div class="background-overlay hidden-sm hidden-md hidden-lg"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 screenshot">
+	      <!-- <img src="/static/images/workstation/workstation-features-terminal.jpg" /> -->
+	    </div>
+	    <div class="col-sm-5 caption">
+	      <h3>${_('Complete open source toolbox')}</h3>
+	      <p>${_('Skip the drag of trying to find or build the tools you need. With Fedora\'s complete set of open source languages, tools, and utilities, everything is a click or command line away. There\'s even project hosting and repositories like COPR to make your code and builds available quickly to the community.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Feature: Boxes -->
+  <div class="jumbotron product-feature boxes" style="background-color: #7bcf3e;">
+    <div class="container">
+      <div class="row">
+	    <div class="col-md-6 caption">
+	      <h3>${Markup(_('GNOME Boxes &amp; other virt tools'))}</h3>
+	      <p>${_('Get virtual machines up and running quickly to test your code on multiple platforms using GNOME Boxes. Or dig into powerful, scriptable virtualization tools for even more control.')}</p>
+        </div>
+        <div class="col-md-6 screenshot">
+	      <img src="/static/images/workstation/workstation-features-boxes.png" />
+	    </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Feature: Docker -->
+  <div class="jumbotron product-feature docker" style="background-color: #e7e7e7">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 screenshot">
+	      <img src="/static/images/workstation/workstation-features-docker.png" />
+	    </div>
+	    <div class="col-md-6 caption">
+	      <h3>${_('Built-in Docker support')}</h3>
+	      <p>${_('Containerize your own apps, or deploy containerized apps out of the box on Fedora, using the latest technology like Docker.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Another testimonial -->
+<!-- Waiting for additional quote
+  <div class="jumbotron product-testimonial">
+    <div class="container text-center">
+          <blockquote>
+              <p>${Markup(_('&ldquo;The plethora of tools provided by&lt;br /&gt; Fedora allows me to get the job done.&lt;br /&gt; It just works.&rdquo;'))}</p>
+              <footer><cite>Christine Flood, ${_('JVM performance engineer')}</cite></footer>
+          </blockquote>
+    </div>
+  </div>
+-->
+  <!-- /Workstation Header -->
+
+
+
+  <!-- Intro
+  <div class="container text-center">
+    <h2 class="thin">FedUp: Upgrade your Fedora now!</h2>
+    <p class="text-muted">
+      If you want to upgrade your Fedora Release version to the next one, without reinstalling the whole system, follow our upgrade instructions >
+    </p>
+    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+  </div>
+   /Intro-->
+
+<!--
+  <div class="jumbotron top-space">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12 text-center">
+          <h2>Other Download options</h2>
+          <div class="h-body text-justify">
+            <p>Fedora Workstation comes with many different images and download options. If you are looking for the DVD, the Netinstall CD, the Source image or the torrent files, this is the right place to look.</p>
+            <div class="visible-xs text-center"><a href="#Workstation" class="btn btn-action btn-success active" role="button">Read more ></a></div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 text-center">
+          <h2>What do I do now?</h2>
+          <div class="h-body text-justify">
+            <ul>
+              <li>First, <a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/20/Live/x86_64/Fedora-Live-Desktop-x86_64-20-1.iso">download a Fedora ISO image</a>.</li>
+              <li>To install Fedora using a USB stick, <a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/Making_USB_Media.html">follow these instructions.</a></li>
+              <li>To install Fedora using a blank CD or DVD, <a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/sn-making-media.html#sn-making-disc-media">follow these instructions.</a></li>
+            </ul>
+            <div class="visible-xs text-center"><a href="#Workstation" class="btn btn-action btn-success active" role="button">Read more ></a></div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 text-center">
+          <h2>Verify your Image</h2>
+          <div class="h-body text-justify">
+            <p>After downloading the ISO image you should verify the integrity of the download. Here you will get all Checksum files and some instructions how to use them.</p>
+            <div class="visible-xs text-center"><a href="#Workstation" class="btn btn-action btn-success active" role="button">Verify now!</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="hidden-xs col-sm-4 text-center">
+          <a href="#Workstation" class="btn btn-action btn-success active" role="button">Read more ></a>
+        </div>
+        <div class="hidden-xs col-sm-4 text-center">
+          <a href="#Workstation" class="btn btn-action btn-success active" role="button">Read more ></a>
+        </div>
+        <div class="hidden-xs col-sm-4 text-center">
+          <a href="#Workstation" class="btn btn-action btn-success active" role="button">Verify now!></a>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+
+
+
+  <!-- Download jumbo -->
+  <div class="jumbotron download-lower hidden-xs">
+	 <h3>${_('Ready to give Fedora Workstation a try?')} <a class="btn" href="./download/" role="button">${_('Download now')}</a></h3>
+  </div>
+
+  <!-- Download jumbo for mobile -->
+  <div class="jumbotron download-lower visible-xs">
+    <h3>${_('Ready to give Fedora Workstation a try?')}</h3>
+    <p><a class="btn btn-visible-xs" href="./download/" role="button">${_('Download now')}</a></p>
+  </div>
+
+
+  <!-- Links to other products -->
+
+  <xi:include href="../../templates/moretofedora.html" />
+  <div class="bottom-products text-center clearfix">
+	<div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-2 col-xs-12 product-selector">
+            <xi:include href="../../templates/productselector-server.html" />
+        </div>
+        <div class="col-sm-4 col-xs-12 product-selector bottom-space">
+            <xi:include href="../../templates/productselector-cloud.html" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- /Links to other products-->
+
+
+  </body>
+</html>

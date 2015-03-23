@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Fedora Cloud')}</title>
+  </head>
+  <body id="cloud">
+
+  <xi:include href="../../templates/cloud/header.html" />
+
+  <header id="head">
+    <div class="container cloud">
+      <div class="row">
+        <div class="col-sm-6 col-md-offset-1 text-left">
+          <h1>${_('Lean. Powerful. Everycloud ready.')}</h1>
+          <h4>${_('Build scale-out computing and utilize the next generation of container deployment with Fedora Cloud')}</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1 text-center">
+            <p><a class="btn btn-success" href="./download/" role="button">${_('Download now')}</a></p>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="jumbotron product-testimonial majorhayden">
+    <div class="container text-center">
+	  <div class="row">
+		 <div class="col-sm-4">
+          <img src="/static/images/cloud/major-headershot.jpg" class="img-circle" />
+        </div>
+        <div class="col-sm-8">
+          <blockquote>
+            <p>${Markup(_('&ldquo;Fedora 21 gives me the balance I\'m looking for &mdash; a leading edge operating system with enterprise-level tools for fast provisioning and configuration.&rdquo;'))}</p>
+            <footer><cite>Major Hayden, ${_('Principal Architect at Rackspace')}</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature: Base -->
+  <div class="jumbotron product-feature base minimalfastflexible" style="background-color: #7bcf3e;">
+    <div class="container">
+      <div class="row">
+	    <div class="col-md-5 col-md-offset-2 col-sm-6  caption">
+	      <h2>${_('Minimal, fast, flexible')}</h2>
+	      <p>${_('Everything you need, and nothing you don\'t. The Fedora Cloud Base image is smaller, so you can deploy faster. Then use the universe of services and tools in Fedora to customize, so your cloud is right for you.')}</p>
+        </div>
+        <div class="col-md-5 col-sm-6 screenshot">
+	      <img src="/static/images/cloud/minimize-vice.png" />
+	    </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature: Industry-standard tools -->
+  <div class="jumbotron product-feature stdtools" style="background-color: #ffffff;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 screenshot">
+	      <img src="/static/images/cloud/openstack.png" />
+	    </div>
+	    <div class="col-sm-6 caption">
+	      <h2>${_('Public or private')}</h2>
+	      <p>${_('Deploy and run Fedora Cloud in public or private cloud infrastructure, using the industry standard tools cloud-init and OpenStack Heat. Wherever you run your cloud, Fedora is ready to go.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Feature: Atomic Host -->
+  <div class="jumbotron product-feature atomic-host">
+    <div class="container">
+      <div class="row top-margin bottom-margin">
+	    <div class="col-sm-6 col-sm-offset-3 text-center caption">
+	      <h2>${_('Designed for containers')}</h2>
+	      <p>${_('Want easy, scalable app deployment? Fedora Atomic Host is optimized and streamlined to run Docker containers out of the box. Whether you\'re rolling out a handful of containers, or scaling up to meet incredible demand, you can do it with Fedora Atomic Host.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Feature: ostree -->
+  <div class="jumbotron product-feature ostree">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 screenshot">
+	      <img src="/static/images/atomicgraphic.png" />
+	    </div>
+	    <div class="col-sm-6 caption">
+	      <h2>${_('Project Atomic inside')}</h2>
+	      <p>${_('The new Project Atomic update system works like git for your operating system. Now you can update and roll back with confidence and minimal downtime.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <div class="jumbotron bluebox">
+    <div class="container text-center ">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h3>Fedora Cloud images provide leading edge software for development and deployment in public cloud environments.</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+
+
+
+  <!-- Download jumbo -->
+  <div class="jumbotron download-lower hidden-xs">
+	<h3>${_('Ready to give Fedora Cloud a try?')} <a class="btn" href="./download/" role="button">${_('Download now')}</a></h3>
+  </div>
+
+  <!-- Download jumbo for mobile -->
+  <div class="jumbotron download-lower visible-xs">
+    <h3>${_('Ready to give Fedora Cloud a try?')}</h3>
+    <p><a class="btn btn-visible-xs" href="./download/" role="button">${_('Download now')}</a></p>
+  </div>
+
+  <!-- Links to other products -->
+  <xi:include href="../../templates/moretofedora.html" />
+  <div class="bottom-products text-center clearfix">
+	<div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-2 col-xs-12 product-selector">
+            <xi:include href="../../templates/productselector-workstation.html" />
+        </div>
+        <div class="col-sm-4 col-xs-12 product-selector bottom-space">
+            <xi:include href="../../templates/productselector-server.html" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Links to other products-->
+
+  </body>
+</html>

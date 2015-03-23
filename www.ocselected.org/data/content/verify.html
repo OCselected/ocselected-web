@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Verify your Downloaded Image')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../templates/head.html" />
+
+  <header id="head" class="recover-heading bluebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-left">
+          <h1>${_('Verify your Downloaded Image')}</h1>
+          <p>
+            ${_('CHECKSUM and Verify Instructions')}
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>${Markup(_('How do I verify my image?'))}</h3>
+            <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded.'))}</p>
+        </div>
+    </div>
+    <div class="row bottom-space">
+        <div class="col-sm-4 col-xs-12 highlight productitem workstation">
+            <div class="productitem-logo">
+                <img src="${path}/static/images/logo-color-workstation.png" />
+            </div>
+            <h4 class="uppercase">${_('Workstation')}</h4>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="./static/checksums/Fedora-Workstation-${global_variables.release['curr_id']}-x86_64-CHECKSUM">${_('For 64bit images')}</a>
+            </div>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="./static/checksums/Fedora-Workstation-${global_variables.release['curr_id']}-i386-CHECKSUM">${_('For 32bit images')}</a>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 highlight productitem server">
+            <div class="productitem-logo">
+                <img src="${path}/static/images/logo-color-server.png" />
+            </div>
+            <h4 class="uppercase">${_('Server')}</h4>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="./static/checksums/Fedora-Server-${global_variables.release['curr_id']}-x86_64-CHECKSUM">${_('For 64bit images')}</a>
+            </div>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="./static/checksums/Fedora-Server-${global_variables.release['curr_id']}-i386-CHECKSUM">${_('For 32bit images')}</a>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 highlight productitem cloud">
+            <div class="productitem-logo">
+                <img src="${path}/static/images/logo-color-cloud.png" />
+            </div>
+            <h4 class="uppercase">${_('Cloud')}</h4>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="./static/checksums/Fedora-Cloud-Images-x86_64-${global_variables.release['curr_id']}-CHECKSUM">${_('For 64bit images')}</a>
+            </div>
+            <div class="h-body text-center">
+              <a class="btn btn-default btn-topmargin btn-verify btn-checksum" href="./static/checksums/Fedora-Cloud-Images-i386-${global_variables.release['curr_id']}-CHECKSUM">${_('For 32bit images')}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row bottom-space">
+        <div class="col-md-12 top-margin">
+            <p>${Markup(_('Next, import Fedora\'s GPG key(s):'))}</p>
+            <pre class="command">$ curl https://getfedora.org/static/fedora.gpg | gpg --import</pre>
+            <p>${Markup(_('You can verify the details of the GPG key(s) &lt;a href="%s/%s/keys"&gt;here&lt;/a&gt;.') % (path, lang))}</p>
+            <p>${Markup(_('Now, verify that the CHECKSUM file is valid:'))}</p>
+            <pre class="command">$ gpg --verify-files *-CHECKSUM</pre>
+            <p>${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}</p>
+            <ul>
+                <li><code>34EC9CBA</code> - ${_('Fedora 23')}</li>
+                <li><code>873529B8</code> - ${_('Fedora 23 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)')}</li>
+                <li><code>8E1431D5</code> - ${_('Fedora 22')}</li>
+                <li><code>A29CB19C</code> - ${_('Fedora 22 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)')}</li>
+                <li><code>95A43F54</code> - ${_('Fedora 21')}</li>
+                <li><code>A0A7BADB</code> - ${_('Fedora 21 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)')}</li>
+                <li><code>246110C1</code> - ${_('Fedora 20')}</li>
+                <li><code>EFE550F5</code> - ${_('Fedora 20 secondary arches (ARM, PPC64, s390)')}</li>
+            </ul>
+            <p>${Markup(_('Finally, now that the CHECKSUM file has been verified, check that the image\'s checksum matches:'))}</p>
+            <pre class="command">$ sha256sum -c *-CHECKSUM</pre>
+            <p>${Markup(_('If the output states that the file is valid, then it\'s ready to use!'))}</p>
+	    <h3 class="top-margin">${_('How do I verify my downloaded image on another operating system?')}</h3>
+	    <p><a href="http://docs.fedoraproject.org/en-US/Fedora/${global_variables.release['curr_id']}/html/Installation_Guide/sect-verifying-images.html">${_('Read these instructions to validate your image.')}</a></p>
+        </div>
+    </div>
+  </div>
+
+
+  </body>
+</html>

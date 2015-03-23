@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Obsolete Package Signing Keys')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../templates/head.html" />
+  <xi:include href="../../templates/keys/key-button-and-modal-obsolete.html" />
+
+  <header id="head" class="recover-heading bluebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-left">
+          <h1>${_('Obsolete Package Signing Keys')}</h1>
+          <p>
+            ${_('This page lists the public GPG keys not used anymore for signing packages in Fedora.')}
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="jumbotron">
+  <div class="container text-center recover-heading">
+    <h2 class="thin">${_('Learn how Fedora protects you.')}</h2>
+    <p class="text-muted">${_('Fedora makes use of GPG package signing to ensure that package integrity has not been compromised.')}</p>
+    <p><a class="btn btn-default" href="faq" role="button">${Markup(_('Read the FAQ to learn more &raquo;'))}</a></p>
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="thin">${_('Obsolete and Unused Keys')}</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container recover-heading">
+    <div class="row">
+      ${keys_for_release(
+      _('Fedora &lt;= 9'),
+      [
+          KeyInfo(
+              _('Fedora GPG key'),
+              '1024D/4F2A6FD2 2003-10-27',
+              'CAB4 4B99 6F27 744E 8612  7CDF B442 69D0 4F2A 6FD2',
+              ['Fedora Project &lt;fedora@redhat.com&gt;'],
+              '1024g/FB939E34 2003-10-27',
+              [],
+              Markup(_('Packages on installation media are signed with this key. The relevant yum repositories are &lt;strong&gt;fedora&lt;/strong&gt;, &lt;strong&gt;fedora-updates&lt;/strong&gt; for Fedora 7-9, and &lt;strong&gt;core&lt;/strong&gt; and &lt;strong&gt;core-updates&lt;/strong&gt; for Fedora Core (Version 6 and earlier). See &lt;a href="http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html"&gt;http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html&lt;/a&gt; for information on why this key is obsolete.')))
+      ])}
+
+      ${keys_for_release(
+      _('Fedora &gt;= 7 testing'),
+      [
+          KeyInfo(
+              _('Fedora Test'),
+              '1024D/30C9ECF8 2003-10-27',
+              '3166 C14A AE72 30D9 3B7A  B2F6 DA84 CBD4 30C9 ECF8',
+              ['Fedora Project (Test Software) &lt;rawhide@redhat.com&gt;'],
+              None,
+              [],
+              Markup(_('If you participate in testing of the packages, this is the key you will use to verify the testing packages. This key signs the packages that are in &lt;strong&gt;fedora-testing&lt;/strong&gt; repository. See &lt;a href="http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html"&gt;http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html&lt;/a&gt; for information on why this key is obsolete.')))
+      ])}
+
+      ${keys_for_release(
+      _('Fedora 8-9'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '1024D/6DF2196F 2008-08-27',
+              '4FFF 1F04 010D EDCA E203  591D 62AE C3DC 6DF2 196F',
+              ['Fedora (8 and 9) &lt;fedora@fedoraproject.org&gt;'],
+              '4096g/9E198F60 2008-08-27',
+              [('https://getfedora.org/static/6DF2196F.txt', 'Fedora Project')
+              ])
+      ])}
+
+      ${keys_for_release(
+      _('Fedora 8-9 testing'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '1024D/DF9B0AE9 2008-08-27',
+              'C0E7 128E 9072 96CA AE31  78A2 8E69 3B4D DF9B 0AE9',
+              ['Fedora (8 and 9 testing) &lt;fedora@fedoraproject.org&gt;'],
+              '4096g/80E34F98 2008-08-27',
+              [('https://getfedora.org/static/DF9B0AE9.txt', 'Fedora Project')
+              ])
+      ])}
+    </div>
+
+    <div class="row">
+      ${keys_for_release(
+      _('Fedora 10'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '1024D/4EBFC273 2008-08-27',
+              '61A8 ABE0 91FF 9FBB F4B0  7709 BF22 6FCC 4EBF C273',
+              ['Fedora (10) &lt;fedora@fedoraproject.org&gt;'],
+              '4096g/C1527A5F 2008-08-27',
+              [('https://getfedora.org/static/4EBFC273.txt', 'Fedora Project')
+              ])
+      ])}
+
+      ${keys_for_release(
+      _('Fedora 10 testing'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '1024D/0B86274E 2008-08-27',
+              'C561 3076 7487 7FDF A36D  CA38 92A1 023D 0B86 274E',
+              ['Fedora (10 testing) &lt;fedora@fedoraproject.org&gt;'],
+              '4096g/7645A8D9 2008-08-27',
+              [('https://getfedora.org/static/0B86274E.txt', 'Fedora Project')
+              ])
+      ])}
+
+      ${keys_for_release(
+      _('Fedora 11'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '4096R/D22E77F2 2009-01-19',
+              'AEE4 0C04 E345 60A7 1F04  3D7C 1DC5 C758 D22E 77F2',
+              ['Fedora (11) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/D22E77F2.txt', 'Fedora Project')
+              ])
+      ])}
+
+      ${keys_for_release(
+      _('Fedora 12'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '4096R/57BBCCBA 2009-07-29',
+              '6BF1 78D2 8A78 9C74 AC0D  C63B 9D1C C348 57BB CCBA',
+              ['Fedora (12) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/57BBCCBA.txt', 'Fedora Project')
+              ])
+      ])}
+    </div>
+
+    <div class="row">
+      ${keys_for_release(
+      _('Fedora 13'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '4096R/E8E40FDE 2010-01-19',
+              '8E5F 73FF 2A18 1765 4D35  8FCA 7EDC 6AD6 E8E4 0FDE',
+              ['Fedora (13) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/E8E40FDE.txt', 'Fedora Project')
+              ])
+      ])}
+
+      ${keys_for_release(
+      _('Fedora 14'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '4096R/97A1071F 2010-07-23',
+              '235C 2936 B4B7 0E61 B373  A020 421C ADDB 97A1 071F',
+              ['Fedora (14) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/97A1071F.txt', 'Fedora Project')
+              ]),
+          KeyInfo(
+              _('s390x'),
+              '1024D/FDB36B03 2010-12-23',
+              'CAF6 47A6 9736 3AB6 D91F  68DF 3E72 9CA7 FDB3 6B03',
+              ['Fedora (14-s390x) &lt;fedora@fedoraproject.org&gt;'],
+              '2048g/E363096B 2010-12-23',
+              [('https://getfedora.org/static/FDB36B03.txt', 'Fedora Project')
+              ])
+      ])}
+
+      ${keys_for_release(
+      _('Fedora 15'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '4096R/069C8460 2011-02-07',
+              '25DB B54B DED7 0987 F4C1  0042 B4EB F579 069C 8460',
+              ['Fedora (15) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/069C8460.txt', 'Fedora Project')
+              ])
+      ])}
+
+      ${keys_for_release(
+      _('Fedora 16'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '4096R/A82BA4B7 2011-07-25',
+              '05A9 12AC 7045 7C3D BC82  D352 067F 00B6 A82B A4B7',
+              ['Fedora (16) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/A82BA4B7.txt', 'Fedora Project')
+              ]),
+
+          KeyInfo(
+              _('Secondary'),
+              '4096R/10D90A9E 2011-08-03',
+              '7EF8 DA0A F3C7 D285 C298  8375 77D3 A304 10D9 0A9E',
+              ['Fedora Secondary (16) &lt;fedora@fedoraproject.org&gt;'],
+              '4096g/8F77BDC3 2011-08-03',
+              [('https://getfedora.org/static/10D90A9E.txt', 'Fedora Project')
+              ])
+      ])}
+    </div>
+
+    <div class="row">
+      ${keys_for_release(
+      _('Fedora 17'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '4096R/1ACA3465 2012-01-10',
+              'CAC4 3FB7 74A4 A673 D81C  5DE7 50E9 4C99 1ACA 3465',
+              ['Fedora (17) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/1ACA3465.txt', 'Fedora Project')
+              ]),
+
+          KeyInfo(
+              _('Secondary'),
+              '4096R/F8DF67E6 2012-01-10',
+              '2086 1F88 B77B EEC8 5CBC  1069 ED85 FCE3 F8DF 67E6',
+              ['Fedora Secondary Arch (17) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/F8DF67E6.txt', 'Fedora Project')
+              ])
+      ])}
+
+      ${keys_for_release(
+      _('Fedora 18'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '4096R/DE7F38BD 2012-08-06',
+              '7EFB 8811 DD11 E380 B679  FCED FF01 125C DE7F 38BD',
+              ['Fedora (18) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/DE7F38BD.txt', 'Fedora Project')
+              ]),
+
+          KeyInfo(
+              _('Secondary'),
+              '4096R/A4D647E9 2012-08-06',
+              '62D6 986A 2639 CF2E 3790  EE45 68DC D160 A4D6 47E9',
+              ['Fedora Secondary Arch (18) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/A4D647E9.txt', 'Fedora Project')
+              ])
+      ])}
+
+      ${keys_for_release(
+      _('Fedora 19'),
+      [
+          KeyInfo(
+              _('Primary'),
+              '4096R/FB4B18E6 2012-12-01',
+              'CA81 B2C8 5E4F 4D4A 1A3F  7234 0747 7E65 FB4B 18E6',
+              ['Fedora (19) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/FB4B18E6.txt', 'Fedora Project')
+              ,('http://keys.gnupg.net:11371/pks/lookup?search=0xFB4B18E6&amp;op=get', 'keys.gnupg.net')
+              ])
+      ,   KeyInfo(
+              _('Secondary'),
+              '4096R/BA094068 2012-12-20',
+              'E6B0 488A 1773 8126 A310  7577 0562 EB6F BA09 4068',
+              ['Fedora Secondary (19) &lt;fedora@fedoraproject.org&gt;'],
+              None,
+              [('https://getfedora.org/static/BA094068.txt', 'Fedora Project')
+              ,('http://keys.gnupg.net:11371/pks/lookup?search=0xBA094068&amp;op=get', 'keys.gnupg.net')
+              ])
+      ])}
+
+      ${keys_for_release(
+      _('EPEL'),
+      [
+          KeyInfo(
+              _('RPM-GPG-KEY-EPEL'),
+              '1024D/217521F6 2007-03-02 [expires: 2017-02-27]',
+              'B940 BE07 7D71 0A28 7D7F  2DD1 119C C036 2175 21F6',
+              ['Fedora EPEL &lt;epel@fedoraproject.org&gt;'],
+              '2048g/B6610DAF 2007-03-02 [expires: 2017-02-27]',
+              [('https://getfedora.org/static/217521F6.txt', 'Fedora Project')
+              ])
+      ])}
+
+      </div>
+
+    <div class="row">
+      ${keys_for_release(
+      _('Fedora Extras'),
+      [
+          KeyInfo(
+              _('Fedora Extras'),
+              '1024D/1AC70CE6 2004-12-14',
+              '5389 DD00 C5BC 5168 12B4  3272 82ED 9504 1AC7 0CE6',
+              [
+                  'Fedora Project &lt;fedora-extras@fedoraproject.org&gt;',
+                  'Fedora Pre Extras Release &lt;pre-extras@fedoraproject.org&gt;',
+                  'Fedora Project &lt;fedora-extras@redhat.com&gt;',
+                  '1024g/4E1A9D43 2004-12-14'
+              ],
+              None,
+              [],
+              Markup(_('If you are using Fedora Extras with Fedora Core 6, use this package from &lt;strong&gt;extras&lt;/strong&gt; repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007). This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.')))
+      ])}
+
+      ${keys_for_release(
+      _('Legacy'),
+      [
+          KeyInfo(
+              _('Legacy'),
+              '1024D/731002FA 2004-01-19',
+              'D66D 121F 9784 5E7B 2757  8C46 108C 4512 7310 02FA',
+              ['Fedora Legacy (http://www.fedoralegacy.org) &lt;secnotice@fedoralegacy.org&gt;'],
+              '2048g/D12E351D 2004-01-19',
+              [],
+              Markup(_('This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL. The Fedora Legacy project no longer exists, so this key will no longer be used to sign packages. This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.')))
+      ])}
+    </div>
+  </div>
+  </body>
+</html>

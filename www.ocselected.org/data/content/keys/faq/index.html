@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../../templates/master.html" />
+  <head>
+    <title>${_('Package Signing FAQ')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../../../templates/head.html" />
+
+  <header id="head" class="recover-heading bluebox">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-left">
+          <h1>${_('Package Signing FAQ')}</h1>
+          <p>
+            ${_('Learn how Fedora makes use of GPG to sign packages to ensure your safety.')}
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container recover-heading">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="thin">${_('How does Fedora Project use GPG keys to sign packages?')}</h2>
+        <p class="text-muted">${Markup(_('Each stable RPM package that is published by Fedora Project is signed with a GPG signature.  By default, yum and the graphical update tools will verify these signatures and refuse to install any packages that are not signed or have bad signatures.  You should always verify the signature of a package before you install it.  These signatures ensure that the packages you install are what was produced by the Fedora Project and have not been altered (accidentally or maliciously) by any mirror or website that is providing the packages.'))}</p>
+        <p class="text-muted">${Markup(_('Packages that can be downloaded from koji build system do not contain signatures, so you should use them with caution.  Similarly, bleeding-edge packages in Rawhide are not necessarily signed.'))}</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="thin">${_('Importing keys')}</h2>
+        <p class="text-muted">${Markup(_('The keys are included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package, you can find them in the &lt;strong&gt;/etc/pki/rpm-gpg&lt;/strong&gt; directory.  Please note that not all keys in this directory are used by Fedora project -- some are used for signing Red Hat Enterprise Linux packages or are no longer used at all. If you use Red Hat Enterprise Linux packages, see &lt;a href="%s"&gt;https://www.redhat.com/security/team/key&lt;/a&gt;.  The keys used by Fedora are enabled in the yum repository configuration, so you generally don\'t need to manually import them into the rpm database.') % ('https://www.redhat.com/security/team/key/'))}</p>
+        <p class="text-muted">${Markup(_('In addition to the fedora-release package and this web page, you can download the Fedora keys from a public key server, such as &lt;a href="%s"&gt;keys.gnupg.net&lt;/a&gt;.') % ('http://keys.gnupg.net/'))}</p>
+        <p class="text-muted">${Markup(_('For some repositories, such as repositories with stable and testing packages in default configuration, &lt;strong&gt;yum&lt;/strong&gt; is able to find a proper key for the repository and asks the user for confirmation before importing the key if the key is not already imported into the rpm database.'))}</p>
+        <p class="text-muted">${Markup(_('You can always import a key into RPM\'s database by hand using the following command:'))}
+          <pre class="command">rpm --import PUBKEY ...</pre>
+        </p>
+        <p class="text-muted">${Markup(_('Refer to &lt;strong&gt;rpm&lt;/strong&gt; manual for more information.'))}</p>
+        <p class="text-muted">${Markup(_('If you want to verify that the keys installed on your system match the keys listed here, you can use GnuPG to check that the fingerprint of the key matches.  For example:'))}
+          <pre class="command">
+$ gpg --quiet --with-fingerprint /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-11-primary
+...
+pub  4096R/D22E77F2 2009-01-19 Fedora (11) &lt;fedora@fedoraproject.org&gt;
+      Key fingerprint = AEE4 0C04 E345 60A7 1F04  3D7C 1DC5 C758 D22E 77F2</pre>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>

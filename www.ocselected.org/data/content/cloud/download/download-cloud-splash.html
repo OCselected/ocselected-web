@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../../templates/master.html" />
+  <head>
+    <title>${_('Download Fedora Cloud')}</title>
+  </head>
+  <body id="cloud">
+
+  <xi:include href="../../../templates/cloud/header.html" />
+  <!--! <div class="mymenu navbar-default workstationmenu">
+    <div class="container">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+     <div class="row col-md-8 col-md-offset-2 row col-sm-10 col-sm-offset-1 col-xs-12">
+        <div class="collapse navbar-collapse">
+          <ul class="nav nav-tabs nav-justified">
+                <li><a href="../">${_('About')}</a></li>
+                <li><a href="#">${_('Take the Tour')}</a></li>
+                <li class="active"><a href="#">${_('Download')}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>-->
+  <header class="splashheader main-head recover-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>${_('Thanks for Downloading Fedora!')}</h2>
+          <p>${_('Your download should begin in a few seconds. If not, click the link below:')}
+            <p class="download-path"></p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row bottom-space">
+        <div class="col-xs-12">
+          <h3>${Markup(_('Verify your Download!'))}</h3>
+          <p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="%s/%s/verify"&gt;these instructions&lt;/a&gt;.') % (path, lang))}</p>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <a class="btn btn-default btn-topmargin checksum" href="${path}/${lang}/verify.html">${_('Validate!')}</a>
+	</div>
+    </div>
+  </div>
+  </body>
+</html>

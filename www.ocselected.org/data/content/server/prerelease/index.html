@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../../templates/master.html" />
+  <head>
+    <title>${Markup(_('Download Fedora Server %s')) % global_variables.release['curr_state']}</title>
+  </head>
+  <body id="server">
+
+  <xi:include href="../../../templates/server/header.html" />
+  <header id="head" class="downloadheader">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-md-offset-5 text-left">
+          <h2>${Markup(_('Download Fedora %(rel)s %(state)s Server')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h2>
+            <p><a class="btn btn-warning" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/x86_64/iso/Fedora-Server-DVD-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.iso" role="button">${_('Download')}</a></p>
+            <h5>${Markup(_('64-Bit %sGB Installation Image')) % global_variables.iso_size['pre_x86_64_server_DVD']}</h5>
+        </div>
+      </div>
+    </div>
+  </header>
+    <div class="container download-container top-space">
+      <div class="row">
+        <div class="col-md-8 text-left bottom-space">
+
+          <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="%(team_url)s"&gt;Server Working Group&lt;/a&gt;. Please direct questions to their &lt;a href="%(team_list)s"&gt;mailing list&lt;/a&gt; or %(team_irc)s on freenode.') % {'team_url':'http://fedoraproject.org/wiki/Server', 'team_list':'https://lists.fedoraproject.org/mailman/listinfo/server', 'team_irc':'#fedora-server'})}
+          ${Markup(_('All issues or bugs should be reported via the &lt;a href="%s"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness.') % 'https://bugzilla.redhat.com/')}
+            <py:choose>
+              <py:when test="global_variables.release['curr_state'] == 'Alpha'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/Fedora_%s_Alpha_release_notes' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+              </py:when>
+              <py:when test="global_variables.release['curr_state'] == 'Beta'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/F%s_Beta_release_announcement' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+              </py:when>
+              <py:otherwise>${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url': 'http://fedorapeople.org/groups/docs/release-notes/%s/' % (l_code), 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+              </py:otherwise>
+            </py:choose>
+          </p>	
+
+          <h3>${_('When is Fedora %s going to be released?') % global_variables.release['next_id']}</h3>
+            <table class="table table-bordered table-responsive">
+              <thead>
+                <tr>
+                  <th>${_('Release State')}</th>
+                  <th>${_('Release Date')}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>${_('Alpha Release Public Availability')}</td>
+                  <td>${schedule['alpha']}</td>
+                </tr>
+                <tr>
+                  <td>${_('Beta Release Public Availability')}</td>
+                  <td>${schedule['beta']}</td>
+                </tr>
+                <tr>
+                  <td>${_('Final Release Public Availability (GA)')}</td>
+                  <td>${schedule['final']}</td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="http://fedoraproject.org/wiki/Releases/${global_variables.release['next_id']}/Schedule">${_('Read all the key milestones of the release schedule...')}</a>
+
+          <h3>${_('Verify your Image')}</h3>
+          	<p>${Markup(_('Once you have downloaded an image, verify it for security and integrity. To verify your image, start by downloading the proper CHECKSUM file into the same directory as the image you downloaded and follow &lt;a href="%s/%s/verify"&gt;these instructions&lt;/a&gt;.') % (path, lang))}</p>
+            <div class="row bottom-margin">
+              <div class="col-sm-6 col-xs-12">
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Server-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-x86_64-CHECKSUM">${_('Validate 64bit!')}</a>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+              <a class="btn btn-default btn-topmargin" href="${path}/static/checksums/Fedora-Server-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-i386-CHECKSUM">${_('Validate 32bit!')}</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 text-left col-md-offset-1">
+          <h3>${_('Other Downloads')}</h3>
+          <p>
+          ${_('Installation DVD:')}
+          <ul>
+            <li><p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/i386/iso/Fedora-Server-DVD-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.iso">${_('32-bit %sGB image' % global_variables.iso_size['pre_i386_server_DVD'])}</a></p></li>
+          </ul>
+          </p>
+          <p>
+          ${_('Netinstall Images:')}
+          <ul>
+          <li><p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.iso">${_('64-bit %sMB image' % global_variables.iso_size['pre_x86_64_server_net'])}</a></p></li>
+          <li><p><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}_${global_variables.release['curr_state']}/Server/i386/iso/Fedora-Server-netinst-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.iso">${_('32-bit %sMB image' % global_variables.iso_size['pre_i386_server_net'])}</a></p></li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

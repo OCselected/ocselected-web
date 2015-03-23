@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${Markup(_('Fedora Project - Page Not Found'))}</title>
+  </head>
+  <body class="home">
+  <xi:include href="../../templates/head.html" />
+
+  <header id="head" class="main-head">
+    <div class="container">
+      <div class="row bottom-space top-space">
+        <div class="col-xs-12">
+            <h1 class="thin">${Markup(_("404: Page Not Found"))}</h1>
+            <img src="../../../static/images/panda-question.png" alt="" />
+            <h4 class="thin">${Markup(_('We apologize, but the file or page you requested could not be found.'))}</h4>
+        </div>
+      </div>
+    </div>
+  </header>
+    <div class="container">
+      <div class="row text-center top-space">
+        <h3 class="thin">${Markup(_('Troubleshooting Ideas'))}</h3>
+      </div>
+      <div class="row bottom-space">
+        <div class="col-sm-2 col-sm-offset-3">
+            <p class="thin">${Markup(_('Double-check the URL if you entered it manually. Did you copy it correctly?'))}</p>
+        </div>
+        <div class="col-sm-2">
+            <p class="thin">${Markup(_('Bad Link? Contact &lt;a href="%s"&gt;the webmaster&lt;/a&gt; and explain which link brought you here.') % 'mailto:webmaster@fedoraproject.org')}</p>
+        </div>
+        <div class="col-sm-2">
+            <p class="thin">${Markup(_('The page or file may have moved. Check the &lt;a href="%(fpo)s"&gt;main site&lt;/a&gt; or search our &lt;a href="%(wiki)s"&gt;wiki&lt;/a&gt;.') % {'fpo':'http://fedoraproject.org/', 'wiki':'https://fedoraproject.org/wiki/Fedora_Project_Wiki'} )}</p>
+        </div>
+      </div>
+     </div>
+
+</body>
+</html>
+

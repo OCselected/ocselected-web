@@ -1,0 +1,107 @@
+<?python
+  # This structure is isomorphic to a 7-tuple. In fact it is only used to ensure
+  # that people pass the correct number of values.
+  class KeyInfo:
+      def __init__(self, label, keyid, fingerprint, uids, sub, links, notes=None):
+          self.label       = label
+          self.keyid       = keyid
+          self.fingerprint = fingerprint
+          self.uids        = uids
+          self.sub         = sub
+          self.links       = links
+          self.notes       = notes
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      py:strip="">
+
+  <py:def function="keys_for_release(release, keys)">
+    <div class="col-sm-3 col-xs-12 highlight productitem">
+      <h4 class="uppercase">${release}</h4>
+      <py:for each="key in keys">
+        <?python
+          shortid = key.fingerprint.replace(' ', '')
+        ?>
+        <div class="modal fade text-left"
+             id="${shortid}"
+             tabindex="-1"
+             role="dialog"
+             aria-labelledby="${shortid}-label"
+             aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span>
+                </button>
+                <h4 class="modal-title" id="${shortid}-label">${release}: ${key.label}</h4>
+              </div>
+              <div class="modal-body">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th colspan="2" class="text-center">${_('GPG Key Information')}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>${_('Key ID')}</td>
+                      <td><code>${key.keyid}</code></td>
+                    </tr>
+                    <tr>
+                      <td>${_('Fingerprint')}</td>
+                      <td><code>${key.fingerprint}</code></td>
+                    </tr>
+                    <py:for each="uid in key.uids">
+                      <tr>
+                        <td>${_('uid')}</td>
+                        <td><code>${uid}</code></td>
+                      </tr>
+                    </py:for>
+                    <py:if test="key.sub is not None">
+                      <tr>
+                        <td>${_('sub')}</td>
+                        <td><code>${key.sub}</code></td>
+                      </tr>
+                    </py:if>
+                  </tbody>
+                </table>
+
+                <py:if test="key.notes is not None">
+                  <hr />
+                  ${key.notes}
+                </py:if>
+
+                <py:if test="type(key.links) is list and len(key.links) > 0">
+                  <hr />
+                  ${_('Get it from:')}
+                  <ul>
+                    <li py:for="link in key.links">
+                      <a href="${link[0]}">${link[1]}</a>
+                    </li>
+                  </ul>
+                </py:if>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">${_('Close')}</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-body text-center">
+          <a data-toggle="modal"
+             data-target="#${shortid}"
+             data-remote="false"
+             href="#"
+             class="btn btn-default btn-topmargin btn-checksum"
+             role="button">
+            ${key.label}
+          </a>
+        </div>
+      </py:for>
+    </div>
+  </py:def>
+</html>

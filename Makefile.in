@@ -1,0 +1,97 @@
+# Default Makefile included by subdirs
+# Should not be called from here (root folder)
+ifndef LANGUAGES
+LANGUAGES := $(shell grep -v "^\#" po/LINGUAS)
+endif
+HTML_FILES = $(shell find data -name "*.html")
+RESOURCE_NAME = /var/tmp/po_dir
+PYTHON = python
+PYBABEL = $(PYTHON) /usr/bin/pybabel
+BASEPATH = ./
+PWD = $(shell pwd)
+POT_FILE := $(shell ls po/*.pot)
+BUILDDIR = $(PWD)/../build.d
+HTTPDDIR = $(PWD)/../httpd
+
+sync = \
+	if test -f "PO_FREEZE"; then \
+		echo "> Not pulling POs for $2"; \
+	else   \
+		if test -d $1/$2; then   \
+			rsync -az $1/$2/po/* po/; \
+			echo ">>> POs pulled"; \
+		else \
+			echo ">>> Error, \`$1/$2' should exists"; \
+		fi   \
+	fi
+
+all: $(LANGUAGES)
+	cp static/robots.txt out/
+
+static:
+	$(PYTHON) $(BUILDDIR)/build.py -o out -s static -b $(BASEPATH)
+
+po/%.mo: po/%.po
+	msgfmt -o $@ $<
+
+pot: $(HTML_FILES)
+ifneq ($(POT_FILE),)
+		${PYBABEL} extract -F $(BUILDDIR)/pybabel.cfg data -o $(POT_FILE)
+else
+		@echo "Error, POT_FILE \`$(POT_FILE)' not found, create it first \
+for me to get its name.. Please use a wise name."
+endif
+
+data/templates/translations.html: po/LINGUAS
+	$(PYTHON) $(BUILDDIR)/construct-translations.py $(BUILDDIR)/translations.ini $^ $@
+
+msgmerge: $(wildcard po/*.po)
+
+pushpot:
+	zanata push $(subst po/,,$(POT_FILE))
+
+pullpos:
+	zanata pull --no-copytrans
+
+# The next call get the Zanata resource from the config file,
+# and if it exists rsync the POs
+syncpos:
+	@$(call sync,$(RESOURCE_NAME),$(shell cat zanata.xml | sed -n 's,.*project-version>\(.*\)<.*,\1,p'))
+
+$(HTTPDDIR)/conf/httpd.conf: $(HTTPDDIR)/conf/httpd.conf.in
+	cp $(HTTPDDIR)/conf/httpd.conf.in $(HTTPDDIR)/conf/httpd.conf
+	sed -i \
+		-e 's#@SERVERROOT@#$(HTTPDDIR)#g' \
+		-e 's#@DOCUMENTROOT@#$(PWD)/out#g' \
+		$(HTTPDDIR)/conf/httpd.conf
+
+
+$(HTTPDDIR)/conf/languages.conf.in: po/LINGUAS
+	$(PYTHON) $(BUILDDIR)/buildconf.py $^ > $@
+
+$(HTTPDDIR)/conf/languages.conf: $(HTTPDDIR)/conf/languages.conf.in
+	cp $(HTTPDDIR)/conf/languages.conf.in $(HTTPDDIR)/conf/languages.conf
+	sed -i \
+		-e 's#@SERVERROOT@#$(HTTPDDIR)#g' \
+		-e 's#@DOCUMENTROOT@#$(PWD)/out#g' \
+		$(HTTPDDIR)/conf/languages.conf
+
+test: 	$(HTTPDDIR)/conf/httpd.conf $(HTTPDDIR)/conf/languages.conf
+	/usr/sbin/httpd -d $(HTTPDDIR) -f conf/httpd.conf
+	@echo "Test instance started at: http://localhost:5000/"
+
+stoptest: clean
+	pid=`cat $(HTTPDDIR)/run/httpd.pid` && \
+	kill -TERM $$pid
+
+clean:
+	rm -rf out
+	rm -f po/*.mo
+	rm -f data/templates/translations.html
+	rm -f data/templates/magfeed.html
+	rm -f build/rss.cache build/rss.pyc
+	rm -f build/schedule.cache
+	rm -f build/json.cache
+	rm -f $(HTTPDDIR)/conf/*.conf $(HTTPDDIR)/conf/languages.conf.in
+
+.PHONY: all static rss-cache clean push test stoptest

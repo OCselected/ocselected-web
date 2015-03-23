@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../../templates/master.html" />
+  <head>
+    <script type="text/javascript" src="${path}/static/js/cloud_ec2.js"></script>
+
+    <title>${_('Download Fedora Cloud')}</title>
+  </head>
+  <body id="cloud">
+
+  <xi:include href="../../../templates/cloud/header.html" />
+  <!--!<div class="mymenu cloudmenu">
+    <div class="container">
+     <div class="row col-md-8 col-md-offset-2 row col-xs-12">
+        <div class="collapse navbar-collapse">
+          <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li><a href="../">About</a></li>
+                <li><a href="#">Take the Tour</a></li>
+                <li class="active"><a href="#">Download</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+  <header class="downloadheader">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-md-offset-5 text-left recover-heading">
+          <h2>${Markup(_('Download Fedora %(rel)s Cloud')) % {'rel':global_variables.release['curr_id']}}</h2>
+            <p>${_('There are two main versions of Fedora Cloud available below:')}
+              <ul>
+                <li>${_('A general purpose version suitable for creating VMs.')}</li>
+                <li>${_('A version for deploying containers powered by Fedora Atomic Host.')}</li>
+              </ul>
+            </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container download-container recover-heading top-space">
+	<div class="row">
+    <div class="col-md-8 col-xs-12">
+    	<div class="row">
+        <div class="hidden-xs">
+          <div class="col-sm-6">
+          <h2>${_('General Purpose')}</h2>
+          <p>${_('This base Fedora Cloud image is for creating general-purpose virtual machines (VMs.)')}</p>
+          </div>
+          <div class="col-sm-6 hidden-xs">
+          <h2>${_('For Containers')}</h2>
+          <p>${_('This is the Fedora Atomic Host image, specifically tailored for use with containers only. Use it to deploy containers.')}</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <div class="visible-xs">
+          <h2>${_('General Purpose')}</h2>
+          <p>${_('This base Fedora Cloud image is for creating general-purpose virtual machines (VMs.)')}</p>
+          </div>
+          <div id="raw-base-link" class="base-link">
+  	      <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Cloud/Images/x86_64/Fedora-Cloud-Base-${global_variables.release['composedate']}-${global_variables.release['curr_id']}.x86_64.raw.xz" role="button">${_('Download')}</a>
+            <p class="caption">${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.iso_size['raw_x86_64_cloud']}</p>
+          </div>
+          <a href="#" id="openstack-base-click" class="click">${_('Are you an OpenStack user?')}</a>
+          <div id="openstack-base-link" class="reveal" style="display: none;">
+  		  <p>${Markup(_('This is Fedora %(rel)s Cloud in a Qcow2-formatted image for use with OpenStack.')) % {'rel':global_variables.release['curr_id']}}</p>
+   	      <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Cloud/Images/x86_64/Fedora-Cloud-Base-${global_variables.release['composedate']}-${global_variables.release['curr_id']}.x86_64.qcow2" role="button">${_('Download')}</a>
+            <p class="caption">${_('64-bit %sMB Qcow2 Image') % global_variables.iso_size['qcow2_x86_64_cloud']}</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-xs-12">
+          <div class="visible-xs">
+          <h2>${_('For Containers')}</h2>
+          <p>${_('This is the Fedora Atomic Host image, specifically tailored for use with containers only. Use it to deploy containers.')}</p>
+          </div>
+          <div id="raw-cont-link">
+  	      <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Cloud/Images/x86_64/Fedora-Cloud-Atomic-${global_variables.release['composedate']}-${global_variables.release['curr_id']}.x86_64.raw.xz" role="button">${_('Download')}</a>
+            <p class="caption">${_('64-bit %sMB xz-Compressed Raw Image') % global_variables.iso_size['atomic_raw_cloud']}</p>
+          </div>
+          <a href="#" id="openstack-cont-click" class="click">${_('Are you an OpenStack user?')}</a>
+          <div id="openstack-cont-link" class="reveal" style="display: none;">
+  		  <p>${Markup(_('This is Fedora %(rel)s Cloud in a Qcow2-formatted image for use with OpenStack.')) % {'rel':global_variables.release['curr_id']}}</p>
+   	      <a class="btn btn-success download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Cloud/Images/x86_64/Fedora-Cloud-Atomic-${global_variables.release['composedate']}-${global_variables.release['curr_id']}.x86_64.qcow2" role="button">${_('Download')}</a>
+            <p class="caption">${_('64-bit %sMB Qcow2 Image') % global_variables.iso_size['atomic_qcow2_cloud']}</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+      <div class="top-space">
+        <div class="col-sm-12 col-xs-12">
+          <h2>${_('Amazon Public Cloud EC2 Images')}</h2>
+          <p>${_('Fedora Cloud AMIs are available in both hardware virtual machine (HVM) and paravirtual (PV) formats. HVM AMIs have access to enhanced networking, GPU processing and performance-enhancing hardware extensions. Some instance types (like Atomic images) are only available as HVM AMIs.')}</p>
+          <p>${Markup(_('If you\'re unsure which image to choose, get the HVM format. It can provide the same or better performance than PV images. &lt;a href="%s"&gt;Learn more...&lt;/a&gt;') % ('http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/virtualization_types.html'))}</p>
+          <p>${_('Choose the region and click to launch in your Amazon Web Services account. You can also copy the AMI ID and use that to launch from the AWS Console or command-line tools.')}</p>
+        </div>
+      </div>
+      <div class="bottom-space">
+        <div class="col-sm-6 col-xs-12">
+
+        <!-- Modal for EC2 Cloud Base HVM Instances -->
+        <p><button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".base-EC2">${_('Base Cloud HVM')}</button>
+        <div class="modal fade base-EC2" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-cloud">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                <h4 class="modal-title">${Markup(_('Fedora %(rel)s Base Cloud HVM')) % {'rel':global_variables.release['curr_id']}}</h4>
+              </div>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>${_('Region')}</th>
+                    <th class="hidden-xs">${_('Ami ID')}</th>
+                    <th class="text-center">${_('Launch')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>${_('US East (N. Virginia)')}</td>
+                    <td class="hidden-xs">ami-acd999c4</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_base['virginia']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('US West (Oregon)')}</td>
+                    <td class="hidden-xs">ami-15326925</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_base['oregon']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('US West (N. California)')}</td>
+                    <td class="hidden-xs">ami-dce3fb99</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_base['california']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('EU West (Ireland)')}</td>
+                    <td class="hidden-xs">ami-b7c846c0</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_base['ireland']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('EU Central (Frankfurt)')}</td>
+                    <td class="hidden-xs">ami-5cd9ea41</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_base['frankfurt']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('Asia Pacific SE (Singapore)')}</td>
+                    <td class="hidden-xs">ami-06edc754</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_base['singapore']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('Asia Pacific NE (Tokyo)')}</td>
+                    <td class="hidden-xs">ami-20d6cd21</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_base['tokyo']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('Asia Pacific SE (Sydney)')}</td>
+                    <td class="hidden-xs">ami-ddf480e7</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_base['sydney']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('South America East (Sāo Paulo)')}</td>
+                    <td class="hidden-xs">ami-650cb078</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_base['saopaolo']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div></p>
+
+        <!-- Modal for EC2 Cloud Base PV Instances -->
+        <p><button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".base-EC2-PV">${_('Base Cloud PV')}</button>
+        <div class="modal fade base-EC2-PV" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-cloud">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                <h4 class="modal-title">${Markup(_('Fedora %(rel)s Base Cloud PV')) % {'rel':global_variables.release['curr_id']}}</h4>
+              </div>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>${_('Region')}</th>
+                    <th class="hidden-xs">${_('Ami ID')}</th>
+                    <th class="text-center">${_('Launch')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>${_('US East (N. Virginia)')}</td>
+                    <td class="hidden-xs">ami-d2d999ba</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_PV['virginia']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('US West (Oregon)')}</td>
+                    <td class="hidden-xs">ami-13326923</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_PV['oregon']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('US West (N. California)')}</td>
+                    <td class="hidden-xs">ami-d0e3fb95</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_PV['california']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('EU West (Ireland)')}</td>
+                    <td class="hidden-xs">ami-cdc846ba</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_PV['ireland']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('EU Central (Frankfurt)')}</td>
+                    <td class="hidden-xs">ami-5ed9ea43</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_PV['frankfurt']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('Asia Pacific SE (Singapore)')}</td>
+                    <td class="hidden-xs">ami-02edc750</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_PV['singapore']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('Asia Pacific NE (Tokyo)')}</td>
+                    <td class="hidden-xs">ami-22d6cd23</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_PV['tokyo']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('Asia Pacific SE (Sydney)')}</td>
+                    <td class="hidden-xs">ami-e5f480df</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_PV['sydney']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('South America East (Sāo Paulo)')}</td>
+                    <td class="hidden-xs">ami-690cb074</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_PV['saopaolo']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div></p>
+
+      </div>
+      <div class="col-sm-6 col-xs-12">
+
+        <!-- Modal for EC2 Cloud Atomic HVM Instances -->
+        <button type="button" class="btn btn-success btn-fix download-cloud-splash" data-toggle="modal" data-target=".atomic-EC2">${_('Atomic Cloud HVM')}</button>
+        <div class="modal fade atomic-EC2" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-cloud">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">${_('Close')}</span></button>
+                <h4 class="modal-title">${Markup(_('Fedora %(rel)s Atomic Cloud HVM')) % {'rel':global_variables.release['curr_id']}}</h4>
+              </div>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>${_('Region')}</th>
+                    <th class="hidden-xs">${_('Ami ID')}</th>
+                    <th>${_('Launch')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>${_('US East (N. Virginia)')}</td>
+                    <td class="hidden-xs">ami-78bafa10</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_atomic['virginia']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('US West (Oregon)')}</td>
+                    <td class="hidden-xs">ami-fd075ccd</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_atomic['oregon']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('US West (N. California)')}</td>
+                    <td class="hidden-xs">ami-7cedf539</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_atomic['california']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('EU West (Ireland)')}</td>
+                    <td class="hidden-xs">ami-dd3fb0aa</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_atomic['ireland']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('EU Central (Frankfurt)')}</td>
+                    <td class="hidden-xs">ami-7adae967</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_atomic['frankfurt']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('Asia Pacific SE (Singapore)')}</td>
+                    <td class="hidden-xs">ami-02e9c350</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_atomic['singapore']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('Asia Pacific NE (Tokyo)')}</td>
+                    <td class="hidden-xs">ami-34243f35</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_atomic['tokyo']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('Asia Pacific SE (Sydney)')}</td>
+                    <td class="hidden-xs">ami-6388fc59</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_atomic['sydney']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>${_('South America East (Sāo Paulo)')}</td>
+                    <td class="hidden-xs">ami-d516aac8</td>
+                    <td class="text-center"><a href="${global_variables.path_ec2_atomic['saopaolo']}"><span class="fa fa-cloud" aria-hidden="true"></span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+     </div>
+  </div>
+    <div class="col-md-3 col-xs-12 col-md-offset-1">
+        <h3>${_('Other Downloads')}</h3>
+        <p>
+          ${_('Base Images:')}
+          <ul>
+            <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Cloud/Images/i386/Fedora-Cloud-Base-${global_variables.release['composedate']}-${global_variables.release['curr_id']}.i386.raw.xz">${_('32-bit raw image')}</a></p></li>
+            <li><p><a class="download-cloud-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Cloud/Images/i386/Fedora-Cloud-Base-${global_variables.release['composedate']}-${global_variables.release['curr_id']}.i386.qcow2">${_('32-bit qcow2 image for OpenStack')}</a></p></li>
+          </ul>
+        </p>
+        <h3>${Markup(_('Try Fedora %(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+          <div class="bottom-margin">
+          <py:choose>
+            <py:when test="global_variables.release['curr_state'] == 'Alpha'">
+              <a href="${path}/${lang}/cloud/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Alpha is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}alpha.png" /></a>
+            </py:when>
+            <py:when test="global_variables.release['curr_state'] == 'Beta'">
+              <a href="${path}/${lang}/cloud/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Beta is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}beta.png" /></a>
+            </py:when>
+          </py:choose>
+          </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
+
+
+
+
+

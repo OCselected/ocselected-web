@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora')}</title>
+  </head>
+
+  <body class="home">
+  <xi:include href="../templates/head.html" />
+  <header id="head" class="main-head">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            <h1 class="thin">${_('Open Cloud Selected')}</h1>
+            <h4 class="thin">${_('Less setup, more innovation. Choose the Open Cloud for your needs, and get to work right away.')}</h4>
+        </div>
+      </div>
+
+      <div class="row bottom-space">
+        <div class="col-sm-4 col-xs-12 highlight productitem workstation">
+          <a href="../${lang}/workstation">
+            <div class="productitem-logo">
+                <div class="h-caption greyscale"></div>
+                <div class="h-caption color"></div>
+            </div>
+            <h4 class="uppercase">${_('Workstation')}</h4>
+            <div class="h-body text-justify">
+              <p>${_('Fedora Workstation is a polished, easy to use operating system for laptop and desktop computers, with a complete set of tools and helpers for developers and makers of all kinds.')}</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-4 col-xs-12 highlight productitem server">
+          <a href="../${lang}/server">
+            <div class="productitem-logo">
+                <div class="h-caption greyscale"></div>
+                <div class="h-caption color"></div>
+            </div>
+            <h4 class="uppercase">${_('Server')}</h4>
+            <div class="h-body text-justify">
+              <p>${_('Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies. It puts you in control of all your infrastructure and services.')}</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-4 col-xs-12 highlight productitem cloud">
+          <a href="../${lang}/cloud">
+            <div class="productitem-logo">
+                <div class="h-caption greyscale"></div>
+                <div class="h-caption color"></div>
+            </div>
+            <h4 class="uppercase">${_('Cloud')}</h4>
+            <div class="h-body text-justify">
+              <p>${_('Fedora Cloud provides a minimal image of Fedora for use in public and private cloud environments. It includes just the bare essentials, so you get enough to run your cloud application -- and nothing more.')}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+
+
+    <div class="community text-center">
+      <div class="container">
+      <h1 class="thin">${_('Freedom. Friends. Features. First.')}</h1>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="h-body text-justify">
+              <h4 class="thin">${_('Fedora is always free for anyone to use, modify, and distribute. It is built and used by people across the globe who work together as a community: the Fedora Project.')}</h4>
+            </div>
+        </div>
+    </div>
+      </div>
+    </div>
+
+
+  <!-- /Header -->
+
+  <!-- Intro -->
+  <!--
+  <div class="container text-center recover-heading top-margin">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            <p class="text-muted">
+              What would you like to accomplish with Fedora? Are you looking for a server platform to host applications and infrastructure services? Are you looking for a powerful desktop workstation? Do you need an image for building a cloud-based application? Fedora offers three separate products for you that are streamlined and configured out-of-the-box for these key uses of Fedora.
+            </p>
+        </div>
+    </div>
+  </div>
+  -->
+  <!-- /Intro-->
+
+  <!-- Highlights - jumbotron -->
+  <!--
+  <div class="jumbotron" id="Products">
+    <div class="container recover-heading">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12 highlight productitem workstation">
+          <a href="../workstation">
+            <div class="productitem-logo">
+                <div class="h-caption greyscale"></div>
+                <div class="h-caption color"></div>
+            </div>
+            <h4>WORKSTATION</h4>
+            <div class="h-body text-justify">
+              <p>Fedora Workstation is a polished, easy to use desktop system for laptops and PCs, with a complete set of tools and helpers for developers and makers of all kinds.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-4 col-xs-12 highlight productitem server">
+          <a href="../server">
+            <div class="productitem-logo">
+                <div class="h-caption greyscale"></div>
+                <div class="h-caption color"></div>
+            </div>
+            <h4>SERVER</h4>
+            <div class="h-body text-justify">
+              <p>Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies. It puts you in control of all your infrastructure and services.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-4 col-xs-12 highlight productitem cloud">
+          <a href="../cloud">
+            <div class="productitem-logo">
+                <div class="h-caption greyscale"></div>
+                <div class="h-caption color"></div>
+            </div>
+            <h4>CLOUD</h4>
+            <div class="h-body text-justify">
+              <p>Fedora Cloud provides a minimal Fedora cloud image for use in public and private cloud environments. It includes just the bare essentials so you get enough to run your cloud application - and nothing more.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+     </div>
+  </div>
+  -->
+  <!-- /Highlights -->
+
+  <!-- container -->
+  <div class="container top-space">
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-2">
+        <h4>${_('Keep up to date with Fedora')}</h4>
+        <p class="thin">${Markup(_('Stay connected with the OCselected Project and get all the latest news and reports in &lt;a href="%s"&gt;Open Cloud Magazine&lt;/a&gt;.') % ('http://ocmagazine.org/'))}</p>
+      </div>
+      <div class="col-sm-4">
+        <h4>${_('Fedora Documentation')}</h4>
+        <p class="thin">${Markup(_('Check out the &lt;a href="%s"&gt;Release Notes&lt;/a&gt; for detailed information on the current release. To learn more about using Fedora and details such as system requirements, see the &lt;a href="%s"&gt;official documentation&lt;/a&gt;.') % ('http://docs.ocselected.org/' + global_variables.release['curr_id'] + '/html/Release_Notes/index.html', 'http://docs.ocselected.org/'))}</p>
+      </div>
+    </div> <!-- /row -->
+    <div class="row  bottom-space">
+      <div class="col-sm-4 col-sm-offset-2">
+        <h4>${_('Looking for more Fedora?')}</h4>
+        <p class="thin">${Markup(_('The Fedora community also to specific requirements. Browse them at the &lt;a href="%s"&gt;Spins page&lt;/a&gt;.') % ('http://spins.ocselected.org/'))}</p>
+      </div>
+      <div class="col-sm-4">
+        <h4>${_('Getting Help')}</h4>
+        <p class="thin">${Markup(_('Need some help with us? Ask a question at &lt;a href="%s"&gt;Ask &lt;/a&gt;, email other users on the &lt;a href="%s"&gt;mailing lists&lt;/a&gt;, or chat realtime in the &lt;a href="%s"&gt;IRC Channels&lt;/a&gt;.') % ('http://ask.ocselected.org/', 'http://www.ocselected.org/wiki/Communicate#Mailing_Lists', 'http://www.ocselected.org/wiki/Communicate#IRC_for_interactive_community_support'))}</p>
+      </div>
+    </div> <!-- /row -->
+</div>  <!-- /container -->
+</body>
+</html>

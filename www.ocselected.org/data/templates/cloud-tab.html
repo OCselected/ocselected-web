@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  py:strip="">
+<body id="cloud">
+<!-- Genshi Template for Cloud table (without JS) -->
+  <py:def function="printrelease(release)">
+					<h5>${_('Fedora %s ') % release}</h5>
+					<table class="verify-live-media">
+							<thead>
+									<tr>
+											<th>${_('Region')}</th>
+											<th>${_('Architecture')}</th>
+											<th>${_('Root store')}</th>
+											<th>${_('AMI ID')}</th>
+											<th>${_('Launch')}</th>
+									</tr>
+							</thead>
+							<tbody>
+								<py:for each="img in ec2_ami['f' + release]">
+									<tr>
+											<td>${img['region']}</td>
+											<td>${img['arch']}</td>
+											<td>${img['store']}</td>
+											<td>${img['id']}</td>
+											<td style="vertical-align: middle">
+												<a href="https://console.aws.amazon.com/ec2/home?region=${img['region']}#launchAmi=${img['id']}">
+												<img style="vertical-align: bottom; display: block; margin: 0 auto" title="${_('Launch AMI instance')}" src="${path}/static/images/cloud_icon.png " alt=""/>
+												</a></td>
+									</tr>
+								</py:for>
+							</tbody>
+					</table>
+
+  </py:def>
+<!-- /end Genshi Template for Cloud table (without JS) -->
+
+<!-- Genshi Template for Cloud html form  (with JS) -->
+  <py:def function="printform(release)">
+            <form id="cloud_options_${release}" class="cloud-options" name="cloud_options_${release}" style="visibility:hidden;" action=''>
+                <select id="region_${release}" name="region_${release}" onchange="getval();">
+                    <option value='null'>${_('Select the nearest region')}</option>
+					<py:for each="reg in ec2_ami['f' + release + '_regions']">
+						<option>$reg</option>
+					</py:for>
+                </select>
+                <select id="arch_${release}" onchange="getval();">
+					<option value="x86_64" py:if="any(a.get('arch', False) == 'x86_64' for a in ec2_ami['f' + release])">${_('64 bit (x86_64)')}</option>
+					<option value="i386" py:if="any(a.get('arch', False) == 'i386' for a in ec2_ami['f' + release])">${_('32 bit (i386)')}</option>
+                </select>
+				<input type="hidden" id="amiid_${release}" />
+                <label for="amiid_${release}" id="label_${release}" class="ami-label"></label>
+				<a href="#clouds" id="amihref_${release}" name="amihref_${release}" class="btn btn-success download-cloud-splash">${_('Launch it!')}</a>
+            </form>
+
+  </py:def>
+<!-- /end Genshi Template for Cloud html form  (with JS) -->
+</body>
+</html>

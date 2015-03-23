@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora Sponsors')}</title>
+  </head>
+  <body>
+
+  <xi:include href="../templates/head.html" />
+
+  <header id="head" class="recover-heading sponsorbox">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-left">
+          <h1>${_('Fedora Sponsors')}</h1>
+          <p>
+            ${_('The OCselected Project is proud to have the following organizations as sponsors...')}
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="jumbotron">
+    <div class="container text-center recover-heading">
+      <h2 class="thin">${_('Primary Sponsor')}</h2>
+      <a href="http://www.redhat.com/"><img src="${path}/static/images/sponsors/redhat-trans.png" alt="Red Hat, Inc." /></a>
+        <p class="top-margin text-justify">${Markup(_('&lt;a href="%s"&gt;Red Hat, Inc.&lt;/a&gt; is the primary sponsor for the Fedora Project. Red Hat provides the Fedora project with a wide variety of resources, including full-time employee support, infrastructure hardware and bandwidth, event funding, and legal counsel.') % 'http://www.redhat.com/')}</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="thin">${_('The Fedora Project is also grateful to the following sponsors for providing substantial support:')}</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container recover-heading top-margin">
+    <div class="row">
+      <div class="col-xs-12 col-md-3 text-center fedora-header">
+        <a href="http://linux.dell.com/"><img src="${path}/static/images/sponsors/dell.gif" alt="Dell Inc." /></a>
+      </div>
+      <div class="col-xs-12 col-md-3 text-center fedora-header">
+        <a href="http://www.proio.com/"><img src="${path}/static/images/sponsors/proio.jpg" alt="Proio" /></a>
+      </div>
+      <div class="col-xs-12 col-md-3 text-center fedora-header">
+        <a href="http://www.serverbeach.com/"><img style="vertical-align:middle" src="${path}/static/images/sponsors/serverBeach.png" alt="ServerBeach" /></a>
+      </div>
+      <div class="col-xs-12 col-md-3 text-center fedora-header">
+        <a href="http://www.teliasoneraic.com/"><img src="${path}/static/images/sponsors/telia.png" alt="TeliaSonera" /></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-3 text-center fedora-header">
+        <a href="http://www.arrivaltel.com/"><img src="${path}/static/images/sponsors/arrival.jpg" alt="Arrival Telecom" /></a>
+      </div>
+      <div class="col-xs-12 col-md-3 text-center fedora-header">
+        <a href="http://www.technomonk.com/"><img src="${path}/static/images/sponsors/technomonk.png" alt="Technomonk" /></a>
+      </div>
+      <div class="col-xs-12 col-md-3 text-center fedora-header">
+        <a href="http://osuosl.org/"><img src="${path}/static/images/sponsors/open_source_lab.png" alt="OSUOSL" /></a>
+      </div>
+      <div class="col-xs-12 col-md-3 text-center fedora-header">
+        <a href="http://www.tummy.com/"><img src="${path}/static/images/sponsors/tummy.png" alt="Tummy" /></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-3 text-center fedora-header">
+        <a href="http://ibiblio.org/"><img src="${path}/static/images/sponsors/ibiblio.png" alt="ibiblio" /></a>
+      </div>
+      <div class="col-xs-12 col-md-3 text-center fedora-header">
+        <a href="http://www.bodhost.com/"><img src="${path}/static/images/sponsors/bodhost.png" alt="BODHost" /></a>
+      </div>
+      <div class="col-xs-12 col-md-3 text-center fedora-header">
+        <a href="http://www.host1plus.com"><img src="${path}/static/images/sponsors/host1plus.jpg" alt="host1plus" /></a>
+      </div>
+      <div class="col-xs-12 col-md-3 text-center fedora-header">
+        <a href="http://www.internetx.com/"><img src="${path}/static/images/sponsors/internetx.png" alt="InterNetX" /></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-3 text-center fedora-header">
+        <a href="http://www.colocationamerica.com"><img src="${path}/static/images/sponsors/colocation-america-logo.png" alt="ColocationAmerica" /></a>
+      </div>
+      <div class="col-xs-12 col-md-3 text-center fedora-header">
+        <a href="https://www.dedicatedsolutions.com"><img src="${path}/static/images/sponsors/dedicatedsolutions.png" alt="Dedicated Solutions" /></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container recover-heading">
+    <div class="row">
+      <div class="col-xs-12">
+       <h4>${_('Fedora Infrastructure would like to thank the following open-source projects for their software (alphabetically ordered):')}</h4>
+         <ul>
+         <li>${_('Askbot')}</li>
+         <li>${_('Ansible')}</li>
+         <li>${_('Git')}</li>
+         <li>${_('Nagios')}</li>
+         <li>${_('GNU Mailman')}</li>
+         <li>${_('Mediawiki')}</li>
+         <li>${_('Python')}</li>
+         <li>${_('Trac')}</li>
+         <li>${_('TurboGears')}</li>
+         </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container recover-heading">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3 class="thin">${_('Interested in sponsoring something for Fedora?')}</h3>
+          <p>${Markup(_('Contact &lt;a href="%(mail_url)s"&gt;admin@ocselected.org&lt;/a&gt; or stop by &lt;strong&gt;#ocselected&lt;/strong&gt; on &lt;strong&gt;irc.freenode.net&lt;/strong&gt;.') % {'mail_url':'mailto:admin@ocselected.org'})}</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  </body>
+</html>

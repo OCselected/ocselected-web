@@ -1,0 +1,1804 @@
+# Translations template for PROJECT.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# 
+# Translators:
+# johnwoo_lee <lijiangsheng1@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: ocselected-web\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2015-03-23 10:48+0800\n"
+"PO-Revision-Date: 2015-03-23 03:27+0000\n"
+"Last-Translator: johnwoo_lee <lijiangsheng1@gmail.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/ocselected-web/language/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: data/content/code-of-conduct.html:8
+msgid "Fedora Code of Conduct"
+msgstr ""
+
+#: data/content/code-of-conduct.html:18
+msgid "Fedora's Code of Conduct"
+msgstr ""
+
+#: data/content/code-of-conduct.html:20
+msgid "Behave as a community member, follow the Code of Conduct."
+msgstr ""
+
+#: data/content/code-of-conduct.html:30
+msgid "Code of Conduct"
+msgstr ""
+
+#: data/content/code-of-conduct.html:38
+msgid ""
+"The Fedora community is made up of a mixture of professionals and volunteers"
+" from all over the world, working on every aspect of the distribution from "
+"coding through to marketing. Diversity is one of our huge strengths, but it "
+"can also lead to communication issues and unhappiness. To that end, we have "
+"a few ground rules that we ask people to adhere to when they're using "
+"project resources."
+msgstr ""
+
+#: data/content/code-of-conduct.html:39
+msgid ""
+"This isn't an exhaustive list of things that you can't do. Rather, take it "
+"in the spirit in which it's intended - a guide to make it easier to be "
+"excellent to each other."
+msgstr ""
+
+#: data/content/code-of-conduct.html:41
+msgid ""
+"Be considerate. Your work will be used by other people, and you in turn will"
+" depend on the work of others. Any decision you take will affect users and "
+"colleagues, and you should take those consequences into account when making "
+"decisions."
+msgstr ""
+
+#: data/content/code-of-conduct.html:42
+msgid ""
+"Be respectful. Not all of us will agree all the time, but disagreement is no"
+" excuse for poor behaviour and poor manners. We might all experience some "
+"frustration now and then, but we cannot allow that frustration to turn into "
+"a personal attack. It's important to remember that a community where people "
+"feel uncomfortable or threatened is not a productive one. Members of the "
+"Fedora community should be respectful when dealing with other contributors "
+"as well as with people outside the Fedora community and with users of "
+"Fedora."
+msgstr ""
+
+#: data/content/code-of-conduct.html:44
+msgid ""
+"When we disagree, we try to understand why. Disagreements, both social and "
+"technical, happen all the time and Fedora is no exception. It is important "
+"that we resolve disagreements and differing views constructively."
+msgstr ""
+
+#: data/content/code-of-conduct.html:45
+msgid ""
+"Remember that we're different. The strength of Fedora comes from its varied "
+"community, people from a wide range of backgrounds. Different people have "
+"different perspectives on issues. Being unable to understand why someone "
+"holds a viewpoint doesn't mean that they're wrong. Don't forget that it is "
+"human to err and blaming each other doesn't get us anywhere, rather offer to"
+" help resolving issues and to help learn from mistakes."
+msgstr ""
+
+#: data/content/index.html:8
+msgid "Fedora"
+msgstr ""
+
+#: data/content/index.html:17
+msgid "Open Cloud Selected"
+msgstr "开放云精选"
+
+#: data/content/index.html:18
+msgid ""
+"Less setup, more innovation. Choose the Open Cloud for your needs, and get "
+"to work right away."
+msgstr ""
+
+#: data/content/index.html:29 data/content/verify.html:39
+#: data/templates/productselector-workstation.html:12
+msgid "Workstation"
+msgstr ""
+
+#: data/content/index.html:31
+msgid ""
+"Fedora Workstation is a polished, easy to use operating system for laptop "
+"and desktop computers, with a complete set of tools and helpers for "
+"developers and makers of all kinds."
+msgstr ""
+
+#: data/content/index.html:41 data/content/verify.html:51
+#: data/templates/productselector-server.html:13
+msgid "Server"
+msgstr ""
+
+#: data/content/index.html:43 data/content/server/index.html:51
+msgid ""
+"Fedora Server is a powerful, flexible operating system that includes the "
+"best and latest datacenter technologies. It puts you in control of all your "
+"infrastructure and services."
+msgstr ""
+
+#: data/content/index.html:53 data/content/verify.html:63
+#: data/templates/productselector-cloud.html:13
+msgid "Cloud"
+msgstr ""
+
+#: data/content/index.html:55
+msgid ""
+"Fedora Cloud provides a minimal image of Fedora for use in public and "
+"private cloud environments. It includes just the bare essentials, so you get"
+" enough to run your cloud application -- and nothing more."
+msgstr ""
+
+#: data/content/index.html:68
+msgid "Freedom. Friends. Features. First."
+msgstr ""
+
+#: data/content/index.html:72
+msgid ""
+"Fedora is always free for anyone to use, modify, and distribute. It is built"
+" and used by people across the globe who work together as a community: the "
+"Fedora Project."
+msgstr ""
+
+#: data/content/index.html:147
+msgid "Keep up to date with Fedora"
+msgstr ""
+
+#: data/content/index.html:148
+#, python-format
+msgid ""
+"Stay connected with the OCselected Project and get all the latest news and "
+"reports in <a href=\"%s\">Open Cloud Magazine</a>."
+msgstr ""
+
+#: data/content/index.html:151
+msgid "Fedora Documentation"
+msgstr ""
+
+#: data/content/index.html:152
+#, python-format
+msgid ""
+"Check out the <a href=\"%s\">Release Notes</a> for detailed information on "
+"the current release. To learn more about using Fedora and details such as "
+"system requirements, see the <a href=\"%s\">official documentation</a>."
+msgstr ""
+
+#: data/content/index.html:157
+msgid "Looking for more Fedora?"
+msgstr ""
+
+#: data/content/index.html:158
+#, python-format
+msgid ""
+"The Fedora community also to specific requirements. Browse them at the <a "
+"href=\"%s\">Spins page</a>."
+msgstr ""
+
+#: data/content/index.html:161
+msgid "Getting Help"
+msgstr ""
+
+#: data/content/index.html:162
+#, python-format
+msgid ""
+"Need some help with us? Ask a question at <a href=\"%s\">Ask </a>, email "
+"other users on the <a href=\"%s\">mailing lists</a>, or chat realtime in the"
+" <a href=\"%s\">IRC Channels</a>."
+msgstr ""
+
+#: data/content/sponsors.html:8 data/content/sponsors.html:18
+msgid "Fedora Sponsors"
+msgstr ""
+
+#: data/content/sponsors.html:20
+msgid ""
+"The OCselected Project is proud to have the following organizations as "
+"sponsors..."
+msgstr ""
+
+#: data/content/sponsors.html:29
+msgid "Primary Sponsor"
+msgstr ""
+
+#: data/content/sponsors.html:31
+#, python-format
+msgid ""
+"<a href=\"%s\">Red Hat, Inc.</a> is the primary sponsor for the Fedora "
+"Project. Red Hat provides the Fedora project with a wide variety of "
+"resources, including full-time employee support, infrastructure hardware and"
+" bandwidth, event funding, and legal counsel."
+msgstr ""
+
+#: data/content/sponsors.html:38
+msgid ""
+"The Fedora Project is also grateful to the following sponsors for providing "
+"substantial support:"
+msgstr ""
+
+#: data/content/sponsors.html:99
+msgid ""
+"Fedora Infrastructure would like to thank the following open-source projects"
+" for their software (alphabetically ordered):"
+msgstr ""
+
+#: data/content/sponsors.html:101
+msgid "Askbot"
+msgstr ""
+
+#: data/content/sponsors.html:102
+msgid "Ansible"
+msgstr ""
+
+#: data/content/sponsors.html:103
+msgid "Git"
+msgstr ""
+
+#: data/content/sponsors.html:104
+msgid "Nagios"
+msgstr ""
+
+#: data/content/sponsors.html:105
+msgid "GNU Mailman"
+msgstr ""
+
+#: data/content/sponsors.html:106
+msgid "Mediawiki"
+msgstr ""
+
+#: data/content/sponsors.html:107
+msgid "Python"
+msgstr ""
+
+#: data/content/sponsors.html:108
+msgid "Trac"
+msgstr ""
+
+#: data/content/sponsors.html:109
+msgid "TurboGears"
+msgstr ""
+
+#: data/content/sponsors.html:118
+msgid "Interested in sponsoring something for Fedora?"
+msgstr ""
+
+#: data/content/sponsors.html:119
+#, python-format
+msgid ""
+"Contact <a href=\"%(mail_url)s\">admin@ocselected.org</a> or stop by "
+"<strong>#ocselected</strong> on <strong>irc.freenode.net</strong>."
+msgstr ""
+
+#: data/content/verify.html:8 data/content/verify.html:18
+msgid "Verify your Downloaded Image"
+msgstr ""
+
+#: data/content/verify.html:20
+msgid "CHECKSUM and Verify Instructions"
+msgstr ""
+
+#: data/content/verify.html:30
+msgid "How do I verify my image?"
+msgstr ""
+
+#: data/content/verify.html:31
+msgid ""
+"Once you have downloaded an image, verify it for security and integrity. To "
+"verify your image, start by downloading the proper CHECKSUM file into the "
+"same directory as the image you downloaded."
+msgstr ""
+
+#: data/content/verify.html:41 data/content/verify.html:53
+#: data/content/verify.html:65
+msgid "For 64bit images"
+msgstr ""
+
+#: data/content/verify.html:44 data/content/verify.html:56
+#: data/content/verify.html:68
+msgid "For 32bit images"
+msgstr ""
+
+#: data/content/verify.html:75
+msgid "Next, import Fedora's GPG key(s):"
+msgstr ""
+
+#: data/content/verify.html:77
+#, python-format
+msgid ""
+"You can verify the details of the GPG key(s) <a "
+"href=\"%s/%s/keys\">here</a>."
+msgstr ""
+
+#: data/content/verify.html:78
+msgid "Now, verify that the CHECKSUM file is valid:"
+msgstr ""
+
+#: data/content/verify.html:80
+msgid ""
+"The CHECKSUM file should have a good signature from one of the following "
+"keys:"
+msgstr ""
+
+#: data/content/verify.html:82 data/content/keys/index.html:46
+msgid "Fedora 23"
+msgstr ""
+
+#: data/content/verify.html:83
+msgid "Fedora 23 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
+msgstr ""
+
+#: data/content/verify.html:84 data/content/keys/index.html:69
+msgid "Fedora 22"
+msgstr ""
+
+#: data/content/verify.html:85
+msgid "Fedora 22 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
+msgstr ""
+
+#: data/content/verify.html:86 data/content/keys/index.html:92
+msgid "Fedora 21"
+msgstr ""
+
+#: data/content/verify.html:87
+msgid "Fedora 21 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)"
+msgstr ""
+
+#: data/content/verify.html:88 data/content/keys/index.html:115
+msgid "Fedora 20"
+msgstr ""
+
+#: data/content/verify.html:89
+msgid "Fedora 20 secondary arches (ARM, PPC64, s390)"
+msgstr ""
+
+#: data/content/verify.html:91
+msgid ""
+"Finally, now that the CHECKSUM file has been verified, check that the "
+"image's checksum matches:"
+msgstr ""
+
+#: data/content/verify.html:93
+msgid "If the output states that the file is valid, then it's ready to use!"
+msgstr ""
+
+#: data/content/verify.html:94
+msgid "How do I verify my downloaded image on another operating system?"
+msgstr ""
+
+#: data/content/verify.html:95
+msgid "Read these instructions to validate your image."
+msgstr ""
+
+#: data/content/cloud/index.html:8
+msgid "Fedora Cloud"
+msgstr ""
+
+#: data/content/cloud/index.html:18
+#: data/templates/productselector-cloud.html:14
+msgid "Lean. Powerful. Everycloud ready."
+msgstr ""
+
+#: data/content/cloud/index.html:19
+msgid ""
+"Build scale-out computing and utilize the next generation of container "
+"deployment with Fedora Cloud"
+msgstr ""
+
+#: data/content/cloud/index.html:24 data/content/cloud/index.html:120
+#: data/content/cloud/index.html:126 data/content/server/index.html:20
+#: data/content/server/index.html:126 data/content/server/index.html:132
+#: data/content/workstation/index.html:20
+#: data/content/workstation/index.html:185
+#: data/content/workstation/index.html:191
+msgid "Download now"
+msgstr ""
+
+#: data/content/cloud/index.html:39
+msgid ""
+"“Fedora 21 gives me the balance I'm looking for — a leading edge operating "
+"system with enterprise-level tools for fast provisioning and configuration.”"
+msgstr ""
+
+#: data/content/cloud/index.html:40
+msgid "Principal Architect at Rackspace"
+msgstr ""
+
+#: data/content/cloud/index.html:52
+msgid "Minimal, fast, flexible"
+msgstr ""
+
+#: data/content/cloud/index.html:53
+msgid ""
+"Everything you need, and nothing you don't. The Fedora Cloud Base image is "
+"smaller, so you can deploy faster. Then use the universe of services and "
+"tools in Fedora to customize, so your cloud is right for you."
+msgstr ""
+
+#: data/content/cloud/index.html:70
+msgid "Public or private"
+msgstr ""
+
+#: data/content/cloud/index.html:71
+msgid ""
+"Deploy and run Fedora Cloud in public or private cloud infrastructure, using"
+" the industry standard tools cloud-init and OpenStack Heat. Wherever you run"
+" your cloud, Fedora is ready to go."
+msgstr ""
+
+#: data/content/cloud/index.html:82
+msgid "Designed for containers"
+msgstr ""
+
+#: data/content/cloud/index.html:83
+msgid ""
+"Want easy, scalable app deployment? Fedora Atomic Host is optimized and "
+"streamlined to run Docker containers out of the box. Whether you're rolling "
+"out a handful of containers, or scaling up to meet incredible demand, you "
+"can do it with Fedora Atomic Host."
+msgstr ""
+
+#: data/content/cloud/index.html:97
+msgid "Project Atomic inside"
+msgstr ""
+
+#: data/content/cloud/index.html:98
+msgid ""
+"The new Project Atomic update system works like git for your operating "
+"system. Now you can update and roll back with confidence and minimal "
+"downtime."
+msgstr ""
+
+#: data/content/cloud/index.html:120 data/content/cloud/index.html:125
+msgid "Ready to give Fedora Cloud a try?"
+msgstr ""
+
+#: data/content/cloud/download/download-cloud-splash.html:8
+#: data/content/cloud/download/index.html:10
+msgid "Download Fedora Cloud"
+msgstr ""
+
+#: data/content/cloud/download/download-cloud-splash.html:37
+#: data/content/server/download/server-download-splash.html:31
+#: data/content/workstation/download/ws-download-splash.html:37
+msgid "Thanks for Downloading Fedora!"
+msgstr ""
+
+#: data/content/cloud/download/download-cloud-splash.html:38
+#: data/content/server/download/server-download-splash.html:32
+#: data/content/workstation/download/ws-download-splash.html:38
+msgid ""
+"Your download should begin in a few seconds. If not, click the link below:"
+msgstr ""
+
+#: data/content/cloud/download/download-cloud-splash.html:48
+#: data/content/server/download/server-download-splash.html:43
+#: data/content/workstation/download/ws-download-splash.html:48
+msgid "Verify your Download!"
+msgstr ""
+
+#: data/content/cloud/download/download-cloud-splash.html:49
+#: data/content/cloud/prerelease/index.html:393
+#: data/content/server/download/server-download-splash.html:44
+#: data/content/server/prerelease/index.html:66
+#: data/content/workstation/download/ws-download-splash.html:49
+#: data/content/workstation/prerelease/index.html:66
+#, python-format
+msgid ""
+"Once you have downloaded an image, verify it for security and integrity. To "
+"verify your image, start by downloading the proper CHECKSUM file into the "
+"same directory as the image you downloaded and follow <a "
+"href=\"%s/%s/verify\">these instructions</a>."
+msgstr ""
+
+#: data/content/cloud/download/download-cloud-splash.html:52
+#: data/content/server/download/server-download-splash.html:47
+#: data/content/workstation/download/ws-download-splash.html:52
+msgid "Validate!"
+msgstr ""
+
+#: data/content/cloud/download/index.html:33
+#, python-format
+msgid "Download Fedora %(rel)s Cloud"
+msgstr ""
+
+#: data/content/cloud/download/index.html:34
+#: data/content/cloud/prerelease/index.html:17
+msgid "There are two main versions of Fedora Cloud available below:"
+msgstr ""
+
+#: data/content/cloud/download/index.html:36
+#: data/content/cloud/prerelease/index.html:19
+msgid "A general purpose version suitable for creating VMs."
+msgstr ""
+
+#: data/content/cloud/download/index.html:37
+#: data/content/cloud/prerelease/index.html:20
+msgid "A version for deploying containers powered by Fedora Atomic Host."
+msgstr ""
+
+#: data/content/cloud/download/index.html:51
+#: data/content/cloud/download/index.html:61
+#: data/content/cloud/prerelease/index.html:50
+#: data/content/cloud/prerelease/index.html:63
+msgid "General Purpose"
+msgstr ""
+
+#: data/content/cloud/download/index.html:52
+#: data/content/cloud/download/index.html:62
+#: data/content/cloud/prerelease/index.html:51
+#: data/content/cloud/prerelease/index.html:64
+msgid ""
+"This base Fedora Cloud image is for creating general-purpose virtual "
+"machines (VMs.)"
+msgstr ""
+
+#: data/content/cloud/download/index.html:55
+#: data/content/cloud/download/index.html:78
+#: data/content/cloud/prerelease/index.html:54
+#: data/content/cloud/prerelease/index.html:82
+msgid "For Containers"
+msgstr ""
+
+#: data/content/cloud/download/index.html:56
+#: data/content/cloud/download/index.html:79
+#: data/content/cloud/prerelease/index.html:55
+#: data/content/cloud/prerelease/index.html:83
+msgid ""
+"This is the Fedora Atomic Host image, specifically tailored for use with "
+"containers only. Use it to deploy containers."
+msgstr ""
+
+#: data/content/cloud/download/index.html:65
+#: data/content/cloud/download/index.html:71
+#: data/content/cloud/download/index.html:82
+#: data/content/cloud/download/index.html:88
+#: data/content/cloud/prerelease/index.html:67
+#: data/content/cloud/prerelease/index.html:73
+#: data/content/cloud/prerelease/index.html:87
+#: data/content/cloud/prerelease/index.html:94
+#: data/content/server/download/index.html:32
+#: data/content/server/prerelease/index.html:18
+#: data/content/workstation/download/index.html:38
+#: data/content/workstation/prerelease/index.html:18
+#: data/templates/footer.html:36
+msgid "Download"
+msgstr ""
+
+#: data/content/cloud/download/index.html:66
+#: data/content/cloud/download/index.html:83
+#: data/content/cloud/prerelease/index.html:68
+#: data/content/cloud/prerelease/index.html:88
+#, python-format
+msgid "64-bit %sMB xz-Compressed Raw Image"
+msgstr ""
+
+#: data/content/cloud/download/index.html:68
+#: data/content/cloud/download/index.html:85
+#: data/content/cloud/prerelease/index.html:70
+#: data/content/cloud/prerelease/index.html:90
+msgid "Are you an OpenStack user?"
+msgstr ""
+
+#: data/content/cloud/download/index.html:70
+#: data/content/cloud/download/index.html:87
+#, python-format
+msgid ""
+"This is Fedora %(rel)s Cloud in a Qcow2-formatted image for use with "
+"OpenStack."
+msgstr ""
+
+#: data/content/cloud/download/index.html:72
+#: data/content/cloud/download/index.html:89
+#: data/content/cloud/prerelease/index.html:74
+#: data/content/cloud/prerelease/index.html:95
+#, python-format
+msgid "64-bit %sMB Qcow2 Image"
+msgstr ""
+
+#: data/content/cloud/download/index.html:97
+#: data/content/cloud/prerelease/index.html:104
+msgid "Amazon Public Cloud EC2 Images"
+msgstr ""
+
+#: data/content/cloud/download/index.html:98
+msgid ""
+"Fedora Cloud AMIs are available in both hardware virtual machine (HVM) and "
+"paravirtual (PV) formats. HVM AMIs have access to enhanced networking, GPU "
+"processing and performance-enhancing hardware extensions. Some instance "
+"types (like Atomic images) are only available as HVM AMIs."
+msgstr ""
+
+#: data/content/cloud/download/index.html:99
+#, python-format
+msgid ""
+"If you're unsure which image to choose, get the HVM format. It can provide "
+"the same or better performance than PV images. <a href=\"%s\">Learn "
+"more...</a>"
+msgstr ""
+
+#: data/content/cloud/download/index.html:100
+#: data/content/cloud/prerelease/index.html:105
+msgid ""
+"Choose the region and click to launch in your Amazon Web Services account. "
+"You can also copy the AMI ID and use that to launch from the AWS Console or "
+"command-line tools."
+msgstr ""
+
+#: data/content/cloud/download/index.html:107
+#: data/content/cloud/prerelease/index.html:114
+msgid "Base Cloud HVM"
+msgstr ""
+
+#: data/content/cloud/download/index.html:112
+#: data/content/cloud/download/index.html:181
+#: data/content/cloud/download/index.html:253
+#: data/content/cloud/prerelease/index.html:119
+#: data/content/cloud/prerelease/index.html:188
+#: data/content/cloud/prerelease/index.html:263
+#: data/templates/keys/key-button-and-modal-obsolete.html:37
+#: data/templates/keys/key-button-and-modal-obsolete.html:88
+#: data/templates/keys/key-button-and-modal.html:37
+#: data/templates/keys/key-button-and-modal.html:88
+msgid "Close"
+msgstr ""
+
+#: data/content/cloud/download/index.html:113
+#, python-format
+msgid "Fedora %(rel)s Base Cloud HVM"
+msgstr ""
+
+#: data/content/cloud/download/index.html:118
+#: data/content/cloud/download/index.html:187
+#: data/content/cloud/download/index.html:259
+#: data/content/cloud/prerelease/index.html:125
+#: data/content/cloud/prerelease/index.html:194
+#: data/content/cloud/prerelease/index.html:269
+#: data/templates/cloud-tab.html:13
+msgid "Region"
+msgstr ""
+
+#: data/content/cloud/download/index.html:119
+#: data/content/cloud/download/index.html:188
+#: data/content/cloud/download/index.html:260
+#: data/content/cloud/prerelease/index.html:126
+#: data/content/cloud/prerelease/index.html:195
+#: data/content/cloud/prerelease/index.html:270
+msgid "Ami ID"
+msgstr ""
+
+#: data/content/cloud/download/index.html:120
+#: data/content/cloud/download/index.html:189
+#: data/content/cloud/download/index.html:261
+#: data/content/cloud/prerelease/index.html:127
+#: data/content/cloud/prerelease/index.html:196
+#: data/content/cloud/prerelease/index.html:271
+#: data/templates/cloud-tab.html:17
+msgid "Launch"
+msgstr ""
+
+#: data/content/cloud/download/index.html:125
+#: data/content/cloud/download/index.html:194
+#: data/content/cloud/download/index.html:266
+#: data/content/cloud/prerelease/index.html:132
+#: data/content/cloud/prerelease/index.html:201
+#: data/content/cloud/prerelease/index.html:276
+msgid "US East (N. Virginia)"
+msgstr ""
+
+#: data/content/cloud/download/index.html:130
+#: data/content/cloud/download/index.html:199
+#: data/content/cloud/download/index.html:271
+#: data/content/cloud/prerelease/index.html:137
+#: data/content/cloud/prerelease/index.html:206
+#: data/content/cloud/prerelease/index.html:281
+msgid "US West (Oregon)"
+msgstr ""
+
+#: data/content/cloud/download/index.html:135
+#: data/content/cloud/download/index.html:204
+#: data/content/cloud/download/index.html:276
+#: data/content/cloud/prerelease/index.html:142
+#: data/content/cloud/prerelease/index.html:211
+#: data/content/cloud/prerelease/index.html:286
+msgid "US West (N. California)"
+msgstr ""
+
+#: data/content/cloud/download/index.html:140
+#: data/content/cloud/download/index.html:209
+#: data/content/cloud/download/index.html:281
+#: data/content/cloud/prerelease/index.html:147
+#: data/content/cloud/prerelease/index.html:216
+#: data/content/cloud/prerelease/index.html:291
+msgid "EU West (Ireland)"
+msgstr ""
+
+#: data/content/cloud/download/index.html:145
+#: data/content/cloud/download/index.html:214
+#: data/content/cloud/download/index.html:286
+#: data/content/cloud/prerelease/index.html:152
+#: data/content/cloud/prerelease/index.html:221
+#: data/content/cloud/prerelease/index.html:296
+msgid "EU Central (Frankfurt)"
+msgstr ""
+
+#: data/content/cloud/download/index.html:150
+#: data/content/cloud/download/index.html:219
+#: data/content/cloud/download/index.html:291
+#: data/content/cloud/prerelease/index.html:157
+#: data/content/cloud/prerelease/index.html:226
+#: data/content/cloud/prerelease/index.html:301
+msgid "Asia Pacific SE (Singapore)"
+msgstr ""
+
+#: data/content/cloud/download/index.html:155
+#: data/content/cloud/download/index.html:224
+#: data/content/cloud/download/index.html:296
+#: data/content/cloud/prerelease/index.html:162
+#: data/content/cloud/prerelease/index.html:231
+#: data/content/cloud/prerelease/index.html:306
+msgid "Asia Pacific NE (Tokyo)"
+msgstr ""
+
+#: data/content/cloud/download/index.html:160
+#: data/content/cloud/download/index.html:229
+#: data/content/cloud/download/index.html:301
+#: data/content/cloud/prerelease/index.html:167
+#: data/content/cloud/prerelease/index.html:236
+#: data/content/cloud/prerelease/index.html:311
+msgid "Asia Pacific SE (Sydney)"
+msgstr ""
+
+#: data/content/cloud/download/index.html:165
+#: data/content/cloud/download/index.html:234
+#: data/content/cloud/download/index.html:306
+#: data/content/cloud/prerelease/index.html:172
+#: data/content/cloud/prerelease/index.html:241
+#: data/content/cloud/prerelease/index.html:316
+msgid "South America East (Sāo Paulo)"
+msgstr ""
+
+#: data/content/cloud/download/index.html:176
+#: data/content/cloud/prerelease/index.html:183
+msgid "Base Cloud PV"
+msgstr ""
+
+#: data/content/cloud/download/index.html:182
+#, python-format
+msgid "Fedora %(rel)s Base Cloud PV"
+msgstr ""
+
+#: data/content/cloud/download/index.html:248
+#: data/content/cloud/prerelease/index.html:258
+msgid "Atomic Cloud HVM"
+msgstr ""
+
+#: data/content/cloud/download/index.html:254
+#, python-format
+msgid "Fedora %(rel)s Atomic Cloud HVM"
+msgstr ""
+
+#: data/content/cloud/download/index.html:320
+#: data/content/cloud/prerelease/index.html:408
+#: data/content/server/download/index.html:47
+#: data/content/server/prerelease/index.html:78
+#: data/content/workstation/download/index.html:54
+#: data/content/workstation/prerelease/index.html:77
+msgid "Other Downloads"
+msgstr ""
+
+#: data/content/cloud/download/index.html:322
+#: data/content/cloud/prerelease/index.html:410
+msgid "Base Images:"
+msgstr ""
+
+#: data/content/cloud/download/index.html:324
+#: data/content/cloud/prerelease/index.html:412
+msgid "32-bit raw image"
+msgstr ""
+
+#: data/content/cloud/download/index.html:325
+#: data/content/cloud/prerelease/index.html:413
+msgid "32-bit qcow2 image for OpenStack"
+msgstr ""
+
+#: data/content/cloud/download/index.html:328
+#: data/content/server/download/index.html:61
+#: data/content/workstation/download/index.html:56
+#, python-format
+msgid "Try Fedora %(rel)s %(state)s"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:8
+#, python-format
+msgid "Download Fedora Cloud %s"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:16
+#, python-format
+msgid "Download Fedora %(rel)s %(state)s Cloud"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:34
+#, python-format
+msgid ""
+"This is pre-release software and is supported by the <a "
+"href=\"%(team_url)s\">Cloud Working Group</a>. Please direct questions to "
+"their <a href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on "
+"freenode."
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:35
+#: data/content/server/prerelease/index.html:29
+#: data/content/workstation/prerelease/index.html:29
+#, python-format
+msgid ""
+"All issues or bugs should be reported via the <a href=\"%s\">Red Hat "
+"Bugzilla</a>. The Fedora Project makes no guarantees as to its suitability "
+"or usefulness."
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:37
+#: data/content/cloud/prerelease/index.html:39
+#: data/content/cloud/prerelease/index.html:41
+#: data/content/server/prerelease/index.html:31
+#: data/content/server/prerelease/index.html:33
+#: data/content/server/prerelease/index.html:35
+#: data/content/workstation/prerelease/index.html:31
+#: data/content/workstation/prerelease/index.html:33
+#: data/content/workstation/prerelease/index.html:35
+#, python-format
+msgid ""
+"Read the <a href=\"%(relnotes_url)s\">Release Notes</a> for more information"
+" on changes and new features, and the <a href=\"%(commonbugs_url)s\">Common "
+"Bugs</a> page for information on commonly-encountered bugs and how to avoid "
+"them."
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:72
+#: data/content/cloud/prerelease/index.html:92
+#, python-format
+msgid ""
+"This is Fedora %(rel)s %(state)s Cloud in a Qcow2-formatted image for use "
+"with OpenStack."
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:120
+#, python-format
+msgid "Fedora %(rel)s %(state)s Base Cloud HVM"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:189
+#, python-format
+msgid "Fedora %(rel)s %(state)s Base Cloud PV"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:264
+#, python-format
+msgid "Fedora %(rel)s %(state)s Atomic Cloud HVM"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:338
+msgid "Vagrant Images"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:339
+msgid ""
+"Fedora Cloud edition is also available as Vagrant Boxes in formats suitable "
+"for libvirt/KVM or VirtualBox. If you're using Vagrant on Mac OS X or "
+"Windows, you'll probably want the VirtualBox image. If you're using the "
+"Fedora Vagrant package, you'll want the libvirt/KVM image."
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:340
+msgid ""
+"If you want to run containers, either to run a service or to develop on top "
+"of, the Atomic image is more suitable."
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:346
+msgid "VirtualBox Image"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:347
+#, python-format
+msgid "64-bit %sMB VirtualBox Vagrant Image"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:351
+msgid "libvirt/KVM Image"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:352
+#, python-format
+msgid "64-bit %sMB libvirt/KVM Vagrant Image"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:362
+#: data/content/server/prerelease/index.html:40
+#: data/content/workstation/prerelease/index.html:40
+#, python-format
+msgid "When is Fedora %s going to be released?"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:366
+#: data/content/server/prerelease/index.html:44
+#: data/content/workstation/prerelease/index.html:44
+msgid "Release State"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:367
+#: data/content/server/prerelease/index.html:45
+#: data/content/workstation/prerelease/index.html:45
+msgid "Release Date"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:372
+#: data/content/server/prerelease/index.html:50
+#: data/content/workstation/prerelease/index.html:50
+msgid "Alpha Release Public Availability"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:376
+#: data/content/server/prerelease/index.html:54
+#: data/content/workstation/prerelease/index.html:54
+msgid "Beta Release Public Availability"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:380
+#: data/content/server/prerelease/index.html:58
+#: data/content/workstation/prerelease/index.html:58
+msgid "Final Release Public Availability (GA)"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:385
+#: data/content/server/prerelease/index.html:63
+#: data/content/workstation/prerelease/index.html:63
+msgid "Read all the key milestones of the release schedule..."
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:392
+#: data/content/server/prerelease/index.html:65
+#: data/content/workstation/prerelease/index.html:65
+msgid "Verify your Image"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:396
+#: data/content/server/prerelease/index.html:69
+#: data/content/workstation/prerelease/index.html:69
+msgid "Validate 64bit!"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:399
+#: data/content/server/prerelease/index.html:72
+#: data/content/workstation/prerelease/index.html:72
+msgid "Validate 32bit!"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:417
+msgid "Vagrant Images:"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:419
+msgid "64-bit Atomic raw image"
+msgstr ""
+
+#: data/content/cloud/prerelease/index.html:420
+msgid "64-bit Atomic qcow2 image for OpenStack"
+msgstr ""
+
+#: data/content/e/404.html:7
+msgid "Fedora Project - Page Not Found"
+msgstr ""
+
+#: data/content/e/404.html:16
+msgid "404: Page Not Found"
+msgstr ""
+
+#: data/content/e/404.html:18
+msgid "We apologize, but the file or page you requested could not be found."
+msgstr ""
+
+#: data/content/e/404.html:25
+msgid "Troubleshooting Ideas"
+msgstr ""
+
+#: data/content/e/404.html:29
+msgid ""
+"Double-check the URL if you entered it manually. Did you copy it correctly?"
+msgstr ""
+
+#: data/content/e/404.html:32
+#, python-format
+msgid ""
+"Bad Link? Contact <a href=\"%s\">the webmaster</a> and explain which link "
+"brought you here."
+msgstr ""
+
+#: data/content/e/404.html:35
+#, python-format
+msgid ""
+"The page or file may have moved. Check the <a href=\"%(fpo)s\">main site</a>"
+" or search our <a href=\"%(wiki)s\">wiki</a>."
+msgstr ""
+
+#: data/content/keys/index.html:8 data/content/keys/index.html:19
+msgid "Package Signing Keys"
+msgstr ""
+
+#: data/content/keys/index.html:21
+msgid ""
+"This page lists the public GPG keys used for signing packages in Fedora."
+msgstr ""
+
+#: data/content/keys/index.html:30 data/content/keys/obsolete.html:30
+msgid "Learn how Fedora protects you."
+msgstr ""
+
+#: data/content/keys/index.html:31 data/content/keys/obsolete.html:31
+msgid ""
+"Fedora makes use of GPG package signing to ensure that package integrity has"
+" not been compromised."
+msgstr ""
+
+#: data/content/keys/index.html:32 data/content/keys/obsolete.html:32
+msgid "Read the FAQ to learn more »"
+msgstr ""
+
+#: data/content/keys/index.html:39
+msgid "Currently Used Keys"
+msgstr ""
+
+#: data/content/keys/index.html:46 data/content/keys/index.html:69
+#: data/content/keys/index.html:92 data/content/keys/index.html:115
+#: data/content/keys/index.html:140 data/content/keys/index.html:154
+#: data/content/keys/obsolete.html:72 data/content/keys/obsolete.html:85
+#: data/content/keys/obsolete.html:100 data/content/keys/obsolete.html:113
+#: data/content/keys/obsolete.html:126 data/content/keys/obsolete.html:139
+#: data/content/keys/obsolete.html:154 data/content/keys/obsolete.html:167
+#: data/content/keys/obsolete.html:188 data/content/keys/obsolete.html:201
+#: data/content/keys/obsolete.html:225 data/content/keys/obsolete.html:247
+#: data/content/keys/obsolete.html:269
+msgid "Primary"
+msgstr ""
+
+#: data/content/keys/index.html:46 data/content/keys/index.html:69
+#: data/content/keys/index.html:92 data/content/keys/index.html:115
+#: data/content/keys/obsolete.html:201 data/content/keys/obsolete.html:225
+#: data/content/keys/obsolete.html:247 data/content/keys/obsolete.html:269
+msgid "Secondary"
+msgstr ""
+
+#: data/content/keys/index.html:140
+msgid "EPEL 7"
+msgstr ""
+
+#: data/content/keys/index.html:154
+msgid "EPEL 6"
+msgstr ""
+
+#: data/content/keys/index.html:170
+#, python-format
+msgid "Looking for <a href=\"%s\">obsolete keys</a>?"
+msgstr ""
+
+#: data/content/keys/obsolete.html:8 data/content/keys/obsolete.html:19
+msgid "Obsolete Package Signing Keys"
+msgstr ""
+
+#: data/content/keys/obsolete.html:21
+msgid ""
+"This page lists the public GPG keys not used anymore for signing packages in"
+" Fedora."
+msgstr ""
+
+#: data/content/keys/obsolete.html:39
+msgid "Obsolete and Unused Keys"
+msgstr ""
+
+#: data/content/keys/obsolete.html:46
+msgid "Fedora <= 9"
+msgstr ""
+
+#: data/content/keys/obsolete.html:46
+msgid "Fedora GPG key"
+msgstr ""
+
+#: data/content/keys/obsolete.html:46
+msgid ""
+"Packages on installation media are signed with this key. The relevant yum "
+"repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> "
+"for Fedora 7-9, and <strong>core</strong> and <strong>core-updates</strong> "
+"for Fedora Core (Version 6 and earlier). See <a "
+"href=\"http://www.redhat.com/archives/fedora-announce-"
+"list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-"
+"announce-list/2008-August/msg00012.html</a> for information on why this key "
+"is obsolete."
+msgstr ""
+
+#: data/content/keys/obsolete.html:59
+msgid "Fedora >= 7 testing"
+msgstr ""
+
+#: data/content/keys/obsolete.html:59
+msgid "Fedora Test"
+msgstr ""
+
+#: data/content/keys/obsolete.html:59
+msgid ""
+"If you participate in testing of the packages, this is the key you will use "
+"to verify the testing packages. This key signs the packages that are in "
+"<strong>fedora-testing</strong> repository. See <a "
+"href=\"http://www.redhat.com/archives/fedora-announce-"
+"list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-"
+"announce-list/2008-August/msg00012.html</a> for information on why this key "
+"is obsolete."
+msgstr ""
+
+#: data/content/keys/obsolete.html:72
+msgid "Fedora 8-9"
+msgstr ""
+
+#: data/content/keys/obsolete.html:85
+msgid "Fedora 8-9 testing"
+msgstr ""
+
+#: data/content/keys/obsolete.html:100
+msgid "Fedora 10"
+msgstr ""
+
+#: data/content/keys/obsolete.html:113
+msgid "Fedora 10 testing"
+msgstr ""
+
+#: data/content/keys/obsolete.html:126
+msgid "Fedora 11"
+msgstr ""
+
+#: data/content/keys/obsolete.html:139
+msgid "Fedora 12"
+msgstr ""
+
+#: data/content/keys/obsolete.html:154
+msgid "Fedora 13"
+msgstr ""
+
+#: data/content/keys/obsolete.html:167
+msgid "Fedora 14"
+msgstr ""
+
+#: data/content/keys/obsolete.html:167
+msgid "s390x"
+msgstr ""
+
+#: data/content/keys/obsolete.html:188
+msgid "Fedora 15"
+msgstr ""
+
+#: data/content/keys/obsolete.html:201
+msgid "Fedora 16"
+msgstr ""
+
+#: data/content/keys/obsolete.html:225
+msgid "Fedora 17"
+msgstr ""
+
+#: data/content/keys/obsolete.html:247
+msgid "Fedora 18"
+msgstr ""
+
+#: data/content/keys/obsolete.html:269
+msgid "Fedora 19"
+msgstr ""
+
+#: data/content/keys/obsolete.html:292
+msgid "EPEL"
+msgstr ""
+
+#: data/content/keys/obsolete.html:292
+msgid "RPM-GPG-KEY-EPEL"
+msgstr ""
+
+#: data/content/keys/obsolete.html:308
+msgid "Fedora Extras"
+msgstr ""
+
+#: data/content/keys/obsolete.html:308
+msgid ""
+"If you are using Fedora Extras with Fedora Core 6, use this package from "
+"<strong>extras</strong> repository.  This key will no longer be used after "
+"Fedora Core 6 and Extras reach EOL (December 7th 2007). This key is not "
+"included in the <strong>fedora-release</strong> package in Fedora 7 and "
+"later releases."
+msgstr ""
+
+#: data/content/keys/obsolete.html:326
+msgid "Legacy"
+msgstr ""
+
+#: data/content/keys/obsolete.html:326
+msgid ""
+"This key was used for packages that were released by Fedora Legacy project "
+"to update releases that reached their official EOL. The Fedora Legacy "
+"project no longer exists, so this key will no longer be used to sign "
+"packages. This key is not included in the <strong>fedora-release</strong> "
+"package in Fedora 7 and later releases."
+msgstr ""
+
+#: data/content/keys/faq/index.html:8 data/content/keys/faq/index.html:18
+msgid "Package Signing FAQ"
+msgstr ""
+
+#: data/content/keys/faq/index.html:20
+msgid ""
+"Learn how Fedora makes use of GPG to sign packages to ensure your safety."
+msgstr ""
+
+#: data/content/keys/faq/index.html:31
+msgid "How does Fedora Project use GPG keys to sign packages?"
+msgstr ""
+
+#: data/content/keys/faq/index.html:32
+msgid ""
+"Each stable RPM package that is published by Fedora Project is signed with a"
+" GPG signature.  By default, yum and the graphical update tools will verify "
+"these signatures and refuse to install any packages that are not signed or "
+"have bad signatures.  You should always verify the signature of a package "
+"before you install it.  These signatures ensure that the packages you "
+"install are what was produced by the Fedora Project and have not been "
+"altered (accidentally or maliciously) by any mirror or website that is "
+"providing the packages."
+msgstr ""
+
+#: data/content/keys/faq/index.html:33
+msgid ""
+"Packages that can be downloaded from koji build system do not contain "
+"signatures, so you should use them with caution.  Similarly, bleeding-edge "
+"packages in Rawhide are not necessarily signed."
+msgstr ""
+
+#: data/content/keys/faq/index.html:41
+msgid "Importing keys"
+msgstr ""
+
+#: data/content/keys/faq/index.html:42
+#, python-format
+msgid ""
+"The keys are included in the <strong>fedora-release</strong> package, you "
+"can find them in the <strong>/etc/pki/rpm-gpg</strong> directory.  Please "
+"note that not all keys in this directory are used by Fedora project -- some "
+"are used for signing Red Hat Enterprise Linux packages or are no longer used"
+" at all. If you use Red Hat Enterprise Linux packages, see <a "
+"href=\"%s\">https://www.redhat.com/security/team/key</a>.  The keys used by "
+"Fedora are enabled in the yum repository configuration, so you generally "
+"don't need to manually import them into the rpm database."
+msgstr ""
+
+#: data/content/keys/faq/index.html:43
+#, python-format
+msgid ""
+"In addition to the fedora-release package and this web page, you can "
+"download the Fedora keys from a public key server, such as <a "
+"href=\"%s\">keys.gnupg.net</a>."
+msgstr ""
+
+#: data/content/keys/faq/index.html:44
+msgid ""
+"For some repositories, such as repositories with stable and testing packages"
+" in default configuration, <strong>yum</strong> is able to find a proper key"
+" for the repository and asks the user for confirmation before importing the "
+"key if the key is not already imported into the rpm database."
+msgstr ""
+
+#: data/content/keys/faq/index.html:45
+msgid ""
+"You can always import a key into RPM's database by hand using the following "
+"command:"
+msgstr ""
+
+#: data/content/keys/faq/index.html:48
+msgid "Refer to <strong>rpm</strong> manual for more information."
+msgstr ""
+
+#: data/content/keys/faq/index.html:49
+msgid ""
+"If you want to verify that the keys installed on your system match the keys "
+"listed here, you can use GnuPG to check that the fingerprint of the key "
+"matches.  For example:"
+msgstr ""
+
+#: data/content/server/index.html:8
+msgid "Fedora Server"
+msgstr ""
+
+#: data/content/server/index.html:19
+#: data/templates/productselector-server.html:14
+msgid ""
+"The latest technology. A stable foundation. Together, for your applications "
+"and services."
+msgstr ""
+
+#: data/content/server/index.html:38
+msgid ""
+"“The simplicity introduced with rolekit and cockpit have made server "
+"deployments a breeze. What took me a few days on other operating systems "
+"took less than an hour with Fedora 21 Server. It just works.”"
+msgstr ""
+
+#: data/content/server/index.html:39
+msgid "Systems Engineer"
+msgstr ""
+
+#: data/content/server/index.html:62
+msgid "Cockpit"
+msgstr ""
+
+#: data/content/server/index.html:63
+msgid ""
+"Manage your system easily with Cockpit's powerful, modern interface. View "
+"and monitor system performance and status, and deploy and manage container-"
+"based services."
+msgstr ""
+
+#: data/content/server/index.html:77
+msgid "Server Roles and Rolekit"
+msgstr ""
+
+#: data/content/server/index.html:78
+msgid ""
+"There's no need to set up your server from scratch when you use server "
+"roles. Server roles plug into your Fedora Server system, providing a well-"
+"integrated service on top of the Fedora Server platform. Deploy and manage "
+"these prepared roles simply using the Rolekit tool."
+msgstr ""
+
+#: data/content/server/index.html:81
+msgid "OpenLMI tools"
+msgstr ""
+
+#: data/content/server/index.html:82
+msgid ""
+"Manage a wide variety of system parameters with OpenLMI. Simplify "
+"administration using its unified command set and powerful Python scripting "
+"interface."
+msgstr ""
+
+#: data/content/server/index.html:96
+msgid "FreeIPA identity management"
+msgstr ""
+
+#: data/content/server/index.html:97
+msgid ""
+"Level up your Linux network with advanced identity management. Manage users,"
+" systems, and policy throughout your environment with FreeIPA, the engine "
+"that drives Fedora Server's Domain Controller role."
+msgstr ""
+
+#: data/content/server/index.html:110
+msgid ""
+"“The Docker Role for Fedora Server was simple and fast to install so that "
+"you can run your Docker images. This makes a great testbed for beginners and"
+" experts with docker so that they can develop their applications on the "
+"fly.”"
+msgstr ""
+
+#: data/content/server/index.html:111
+msgid "Information Systems Student"
+msgstr ""
+
+#: data/content/server/index.html:126 data/content/server/index.html:131
+msgid "Ready to give Fedora Server a try?"
+msgstr ""
+
+#: data/content/server/download/index.html:8
+#: data/content/server/download/server-download-splash.html:8
+msgid "Download Fedora Server"
+msgstr ""
+
+#: data/content/server/download/index.html:31
+#, python-format
+msgid "Download Fedora %(rel)s Server"
+msgstr ""
+
+#: data/content/server/download/index.html:33
+#, python-format
+msgid "64-Bit %sGB installation image"
+msgstr ""
+
+#: data/content/server/download/index.html:41
+msgid ""
+"The Fedora Server installation image allows you to make media for your "
+"computer that boots to the installer to directly install Fedora Server on to"
+" your hard drive"
+msgstr ""
+
+#: data/content/server/download/index.html:42
+#: data/content/workstation/download/index.html:49
+msgid ""
+"To use this image, you need a drive that can create or \"burn\" DVDs, or a "
+"USB flash drive at least as big as the image."
+msgstr ""
+
+#: data/content/server/download/index.html:49
+#: data/content/server/prerelease/index.html:80
+msgid "Installation DVD:"
+msgstr ""
+
+#: data/content/server/download/index.html:55
+#: data/content/server/prerelease/index.html:86
+msgid "Netinstall Images:"
+msgstr ""
+
+#: data/content/server/download/server-download-splash.html:50
+#: data/content/workstation/download/ws-download-splash.html:55
+msgid "How do I turn the Live image into bootable media?"
+msgstr ""
+
+#: data/content/server/download/server-download-splash.html:51
+#: data/content/workstation/download/ws-download-splash.html:56
+#, python-format
+msgid ""
+"After you download the image, you will make bootable media from it. Either "
+"<a href=\"%s\">burn the image to a blank DVD disc</a>, or <a "
+"href=\"%s\">write the image to a USB flash drive</a>."
+msgstr ""
+
+#: data/content/server/download/server-download-splash.html:52
+#: data/content/workstation/download/ws-download-splash.html:57
+msgid "How do I boot from the media?"
+msgstr ""
+
+#: data/content/server/download/server-download-splash.html:53
+#: data/content/workstation/download/ws-download-splash.html:58
+#, python-format
+msgid ""
+"Consult your computer system's documentation for the procedure to boot from "
+"media other than the built-in hard disk. The process may differ based on the"
+" manufacturer and model of your computer. You may find <a href='%s'>these "
+"common tips</a> useful."
+msgstr ""
+
+#: data/content/server/prerelease/index.html:8
+#, python-format
+msgid "Download Fedora Server %s"
+msgstr ""
+
+#: data/content/server/prerelease/index.html:17
+#, python-format
+msgid "Download Fedora %(rel)s %(state)s Server"
+msgstr ""
+
+#: data/content/server/prerelease/index.html:19
+#, python-format
+msgid "64-Bit %sGB Installation Image"
+msgstr ""
+
+#: data/content/server/prerelease/index.html:28
+#, python-format
+msgid ""
+"This is pre-release software and is supported by the <a "
+"href=\"%(team_url)s\">Server Working Group</a>. Please direct questions to "
+"their <a href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on "
+"freenode."
+msgstr ""
+
+#: data/content/workstation/index.html:8
+msgid "Fedora Workstation"
+msgstr ""
+
+#: data/content/workstation/index.html:19
+#: data/templates/productselector-workstation.html:13
+msgid "This is the Linux workstation you've been waiting for."
+msgstr ""
+
+#: data/content/workstation/index.html:31
+msgid ""
+"Fedora Workstation is a reliable, user-friendly, and powerful operating "
+"system for your laptop or desktop computer. It supports a wide range of "
+"developers, from hobbyists and students to professionals in corporate "
+"environments."
+msgstr ""
+
+#: data/content/workstation/index.html:41
+msgid ""
+"“The plethora of tools provided by<br /> Fedora allows me to get the job "
+"done.<br /> It just works.”"
+msgstr ""
+
+#: data/content/workstation/index.html:42
+msgid "JVM performance engineer"
+msgstr ""
+
+#: data/content/workstation/index.html:53
+msgid "Sleek user interface"
+msgstr ""
+
+#: data/content/workstation/index.html:54
+msgid ""
+"Focus on your code in the GNOME 3 desktop environment. GNOME is built with "
+"developer feedback and minimizes distractions, so you can concentrate on "
+"what's important."
+msgstr ""
+
+#: data/content/workstation/index.html:72
+msgid "Complete open source toolbox"
+msgstr ""
+
+#: data/content/workstation/index.html:73
+msgid ""
+"Skip the drag of trying to find or build the tools you need. With Fedora's "
+"complete set of open source languages, tools, and utilities, everything is a"
+" click or command line away. There's even project hosting and repositories "
+"like COPR to make your code and builds available quickly to the community."
+msgstr ""
+
+#: data/content/workstation/index.html:86
+msgid "GNOME Boxes & other virt tools"
+msgstr ""
+
+#: data/content/workstation/index.html:87
+msgid ""
+"Get virtual machines up and running quickly to test your code on multiple "
+"platforms using GNOME Boxes. Or dig into powerful, scriptable virtualization"
+" tools for even more control."
+msgstr ""
+
+#: data/content/workstation/index.html:104
+msgid "Built-in Docker support"
+msgstr ""
+
+#: data/content/workstation/index.html:105
+msgid ""
+"Containerize your own apps, or deploy containerized apps out of the box on "
+"Fedora, using the latest technology like Docker."
+msgstr ""
+
+#: data/content/workstation/index.html:185
+#: data/content/workstation/index.html:190
+msgid "Ready to give Fedora Workstation a try?"
+msgstr ""
+
+#: data/content/workstation/download/index.html:8
+#: data/content/workstation/download/ws-download-splash.html:8
+msgid "Download Fedora Workstation"
+msgstr ""
+
+#: data/content/workstation/download/index.html:37
+#, python-format
+msgid "Download Fedora %(rel)s Workstation"
+msgstr ""
+
+#: data/content/workstation/download/index.html:39
+#: data/content/workstation/prerelease/index.html:19
+#, python-format
+msgid "64-Bit %sGB Live Image"
+msgstr ""
+
+#: data/content/workstation/download/index.html:47
+msgid "What is a Live image?"
+msgstr ""
+
+#: data/content/workstation/download/index.html:48
+msgid ""
+"The Fedora Workstation Live image allows you to make media for your computer"
+" that provides a complete, running Fedora Workstation you can run right "
+"away. You can use the Live image to test and play with Fedora without making"
+" changes to your hard disk. When you are ready, you can install Fedora to "
+"your hard disk from the Live image."
+msgstr ""
+
+#: data/content/workstation/prerelease/index.html:8
+#, python-format
+msgid "Download Fedora Workstation %s"
+msgstr ""
+
+#: data/content/workstation/prerelease/index.html:17
+#, python-format
+msgid "Download Fedora %(rel)s %(state)s Workstation"
+msgstr ""
+
+#: data/content/workstation/prerelease/index.html:28
+#, python-format
+msgid ""
+"This is pre-release software and is supported by the <a "
+"href=\"%(team_url)s\">Workstation Working Group</a>. Please direct questions"
+" to their <a href=\"%(team_list)s\">mailing list</a> or %(team_irc)s on "
+"freenode."
+msgstr ""
+
+#: data/templates/cloud-tab.html:9
+#, python-format
+msgid "Fedora %s "
+msgstr ""
+
+#: data/templates/cloud-tab.html:14
+msgid "Architecture"
+msgstr ""
+
+#: data/templates/cloud-tab.html:15
+msgid "Root store"
+msgstr ""
+
+#: data/templates/cloud-tab.html:16
+msgid "AMI ID"
+msgstr ""
+
+#: data/templates/cloud-tab.html:29
+msgid "Launch AMI instance"
+msgstr ""
+
+#: data/templates/cloud-tab.html:43
+msgid "Select the nearest region"
+msgstr ""
+
+#: data/templates/cloud-tab.html:49
+msgid "64 bit (x86_64)"
+msgstr ""
+
+#: data/templates/cloud-tab.html:50
+msgid "32 bit (i386)"
+msgstr ""
+
+#: data/templates/cloud-tab.html:54
+msgid "Launch it!"
+msgstr ""
+
+#: data/templates/content-export-regulations.html:9
+msgid "Export Regulations"
+msgstr ""
+
+#: data/templates/content-export-regulations.html:11
+msgid "Read full export regulations"
+msgstr ""
+
+#: data/templates/footer.html:14
+msgid "About"
+msgstr ""
+
+#: data/templates/footer.html:17
+msgid "About OCselected"
+msgstr ""
+
+#: data/templates/footer.html:18
+msgid "Sponsors"
+msgstr ""
+
+#: data/templates/footer.html:19
+msgid "Fedora Magazine"
+msgstr ""
+
+#: data/templates/footer.html:39
+msgid "Get oVirt"
+msgstr ""
+
+#: data/templates/footer.html:40
+msgid "Get Fuel OpenStack"
+msgstr ""
+
+#: data/templates/footer.html:41
+msgid "Get Mesos"
+msgstr ""
+
+#: data/templates/footer.html:42
+msgid "Fedora Spins"
+msgstr ""
+
+#: data/templates/footer.html:50
+msgid "Support"
+msgstr ""
+
+#: data/templates/footer.html:53
+msgid "Get Help"
+msgstr ""
+
+#: data/templates/footer.html:57
+msgid "Installation Guide"
+msgstr ""
+
+#: data/templates/footer.html:63
+msgid "Join"
+msgstr ""
+
+#: data/templates/footer.html:66
+msgid "Join OCselected"
+msgstr ""
+
+#: data/templates/footer.html:67
+msgid "Planet OCselected"
+msgstr ""
+
+#: data/templates/footer.html:68
+msgid "OCselected SIGs"
+msgstr ""
+
+#: data/templates/footer.html:84
+msgid "OCselected is sponsored by xxx."
+msgstr ""
+
+#: data/templates/footer.html:92
+msgid "Change Language"
+msgstr ""
+
+#: data/templates/footer.html:96
+msgid "OK"
+msgstr ""
+
+#: data/templates/moretofedora.html:12
+msgid "There's more to"
+msgstr ""
+
+#: data/templates/generic/docs-links.html:8
+msgid "Documentation and other resources"
+msgstr ""
+
+#: data/templates/generic/docs-links.html:9
+#, python-format
+msgid ""
+"Before installing Fedora, you may want to confirm your system meets minimum "
+"requirements for Fedora. Consult <a href=\"%s\">the online release notes</a>"
+" to see minimum requirements and recommendations."
+msgstr ""
+
+#: data/templates/generic/docs-links.html:10
+#, python-format
+msgid ""
+"There is also a <a href=\"%s\">complete Installation Guide</a> available. We"
+" recommend you look through it before installing to your system, since it "
+"answers many common questions."
+msgstr ""
+
+#: data/templates/generic/other-media-sources.html:8
+msgid "Other ways of obtaining media"
+msgstr ""
+
+#: data/templates/generic/other-media-sources.html:9
+#, python-format
+msgid ""
+"You may purchase installation media for Fedora from <a href=\"%s\">online "
+"vendors</a> or a <a href=\"%s\">local vendor</a> in your area."
+msgstr ""
+
+#: data/templates/generic/other-media-sources.html:10
+#, python-format
+msgid ""
+"Can't afford the price of installation media? Request Fedora installation "
+"media from the <a href=\"%s\">Fedora Free Media Program</a>."
+msgstr ""
+
+#: data/templates/keys/key-button-and-modal-obsolete.html:45
+#: data/templates/keys/key-button-and-modal.html:45
+msgid "GPG Key Information"
+msgstr ""
+
+#: data/templates/keys/key-button-and-modal-obsolete.html:50
+#: data/templates/keys/key-button-and-modal.html:50
+msgid "Key ID"
+msgstr ""
+
+#: data/templates/keys/key-button-and-modal-obsolete.html:54
+#: data/templates/keys/key-button-and-modal.html:54
+msgid "Fingerprint"
+msgstr ""
+
+#: data/templates/keys/key-button-and-modal-obsolete.html:59
+#: data/templates/keys/key-button-and-modal.html:59
+msgid "uid"
+msgstr ""
+
+#: data/templates/keys/key-button-and-modal-obsolete.html:65
+#: data/templates/keys/key-button-and-modal.html:65
+msgid "sub"
+msgstr ""
+
+#: data/templates/keys/key-button-and-modal-obsolete.html:79
+#: data/templates/keys/key-button-and-modal.html:79
+msgid "Get it from:"
+msgstr ""

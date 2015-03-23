@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('Fedora Server')}</title>
+  </head>
+  <body id="server">
+
+  <xi:include href="../../templates/server/header.html" />
+
+  <header id="head">
+	<div class="jumbotron header-splash">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-1 text-left">
+            <h1>${_('The latest technology. A stable foundation. Together, for your applications and services.')}</h1>
+              <p><a class="btn-success btn" href="./download/" role="button">${_('Download now')}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- /Server Header -->
+
+  <!-- Product Testimonial #1 -->
+  <div class="jumbotron product-testimonial">
+    <div class="container text-center">
+	  <div class="row">
+		 <div class="col-md-4">
+          <img src="/static/images/server/dan-headshot.jpg" class="img-circle" />
+        </div>
+		<div class="col-md-8">
+          <blockquote>
+            <p>${Markup(_('&ldquo;The simplicity introduced with rolekit and cockpit have made server deployments a breeze. What took me a few days on other operating systems took less than an hour with Fedora 21 Server. It just works.&rdquo;'))}</p>
+            <footer><cite>Dan Mossor, ${_('Systems Engineer')}</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product definition -->
+  <div class="jumbotron product-definition">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <p>${_('Fedora Server is a powerful, flexible operating system that includes the best and latest datacenter technologies. It puts you in control of all your infrastructure and services.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature: Cockpit -->
+  <div class="jumbotron product-feature cockpit">
+    <div class="container">
+      <div class="row">
+	    <div class="col-md-6 caption">
+	      <h3>${_('Cockpit')}</h3>
+	      <p>${_('Manage your system easily with Cockpit\'s powerful, modern interface. View and monitor system performance and status, and deploy and manage container-based services.')}</p>
+        </div>
+        <div class="col-md-6 screenshot">
+	      <img src="/static/images/server/server-features-cockpit.png" />
+	    </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature: Server Roles & Role Kit and OpenLMI  -->
+  <div class="jumbotron product-feature two-col">
+    <div class="container">
+      <div class="row">
+	    <div class="col-md-offset-1 col-md-6 rolekit">
+		  <h3>${_('Server Roles and Rolekit')}</h3>
+	        <p>${_('There\'s no need to set up your server from scratch when you use server roles. Server roles plug into your Fedora Server system, providing a well-integrated service on top of the Fedora Server platform. Deploy and manage these prepared roles simply using the Rolekit tool.')}</p>
+        </div>
+        <div class="col-md-5 openlmi">
+          <h3>${_('OpenLMI tools')}</h3>
+	        <p>${_('Manage a wide variety of system parameters with OpenLMI. Simplify administration using its unified command set and powerful Python scripting interface.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature: freeIPA -->
+  <div class="jumbotron product-feature freeipa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 screenshot">
+	      <img src="/static/images/server/server-features-freeipa.png" />
+	    </div>
+	    <div class="col-md-6 caption">
+	      <h3>${_('FreeIPA identity management')}</h3>
+	      <p>${_('Level up your Linux network with advanced identity management. Manage users, systems, and policy throughout your environment with FreeIPA, the engine that drives Fedora Server\'s Domain Controller role.')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Product Testimonial #2 -->
+  <div class="jumbotron product-testimonial">
+    <div class="container text-center">
+	  <div class="row">
+		<div class="col-md-8">
+          <blockquote>
+            <p>${Markup(_('&ldquo;The Docker Role for Fedora Server was simple and fast to install so that you can run your Docker images. This makes a great testbed for beginners and experts with docker so that they can develop their applications on the fly.&rdquo;'))}</p>
+            <footer><cite>John Unland, ${_('Information Systems Student')}</cite></footer>
+          </blockquote>
+        </div>
+		 <div class="col-md-4">
+          <img src="/static/images/server/john-headshot.jpg" class="img-circle" />
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Download jumbo -->
+  <div class="jumbotron download-lower hidden-xs">
+	 <h3>${_('Ready to give Fedora Server a try?')} <a class="btn" href="./download/" role="button">${_('Download now')}</a></h3>
+  </div>
+
+  <!-- Download jumbo for mobile -->
+  <div class="jumbotron download-lower visible-xs">
+   <h3>${_('Ready to give Fedora Server a try?')}</h3>
+   <p><a class="btn btn-visible-xs" href="./download/" role="button">${_('Download now')}</a></p>
+  </div>
+
+  <!-- Links to other products -->
+  <xi:include href="../../templates/moretofedora.html" />
+  <div class="bottom-products text-center clearfix">
+	<div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-2 col-xs-12 product-selector">
+            <xi:include href="../../templates/productselector-workstation.html" />
+        </div>
+        <div class="col-sm-4 col-xs-12 product-selector bottom-space">
+            <xi:include href="../../templates/productselector-cloud.html" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Links to other products-->
+
+  <!--
+  <div class="container text-center recover-heading">
+    <h2 class="thin">FedUp: Upgrade your Fedora now!</h2>
+    <p class="text-muted">
+      If you want to upgrade your Fedora Release version to the next one, without reinstalling the whole system, follow our upgrade instructions.
+    </p>
+    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+  </div>
+
+  <div class="jumbotron">
+    <div class="container recover-heading">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12 text-center">
+          <h2>Other Download options</h2>
+          <div class="h-body text-justify">
+            <p>Fedora Server comes with several different images and download options. If you are looking for the DVD, the Netinstall CD, the Source image or the torrent files, this is the right place to look.</p>
+            <div class="visible-xs text-center"><a href="download" class="btn btn-action btn-success active" role="button">Read more &raquo;</a></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-12 text-center">
+          <h2>What do I do now?</h2>
+          <div class="h-body text-justify">
+            <ul>
+              <li>First, <a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/20/Live/x86_64/Fedora-Live-Desktop-x86_64-20-1.iso">download a Fedora ISO image</a>.</li>
+              <li>To install Fedora using a USB stick, <a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/Making_USB_Media.html">follow these instructions.</a></li>
+              <li>To install Fedora using a blank CD or DVD, <a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/sn-making-media.html#sn-making-disc-media">follow these instructions.</a></li>
+            </ul>
+            <div class="visible-xs text-center"><a href="#Workstation" class="btn btn-action btn-success active" role="button">Read more &raquo;</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="hidden-xs col-sm-6 text-center">
+          <a href="download" class="btn btn-action btn-success active" role="button">Read more &raquo;</a>
+        </div>
+        <div class="hidden-xs col-sm-6 text-center">
+          <a href="#TODO" class="btn btn-action btn-success active" role="button">Read more &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+
+  </body>
+</html>

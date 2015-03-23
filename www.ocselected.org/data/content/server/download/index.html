@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../../templates/master.html" />
+  <head>
+    <title>${_('Download Fedora Server')}</title>
+  </head>
+  <body id="server">
+
+  <xi:include href="../../../templates/server/header.html" />
+  <!--! <div class="mymenu servermenu">
+    <div class="container">
+     <div class="row col-md-8 col-md-offset-2 row col-xs-12">
+        <div class="collapse navbar-collapse">
+          <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li><a href="../">About</a></li>
+                <li><a href="#">Take the Tour</a></li>
+                <li class="active"><a href="#">Download</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+  <header id="head" class="downloadheader">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-md-offset-5 text-left">
+          <h2>${Markup(_('Download Fedora %(rel)s Server')) % {'rel':global_variables.release['curr_id']}}</h2>
+            <p><a class="btn btn-success server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/x86_64/iso/Fedora-Server-DVD-x86_64-${global_variables.release['curr_id']}.iso" role="button">${_('Download')}</a></p>
+            <h5>${Markup(_('64-Bit %sGB installation image')) % global_variables.iso_size['x86_64_server_DVD']}</h5>
+        </div>
+      </div>
+    </div>
+  </header>
+    <div class="container recover-heading top-space">
+      <div class="row">
+        <div class="col-md-8 text-left bottom-space top-space">
+	        <p>${_('The Fedora Server installation image allows you to make media for your computer that boots to the installer to directly install Fedora Server on to your hard drive')}</p>
+		<p>${_('To use this image, you need a drive that can create or "burn" DVDs, or a USB flash drive at least as big as the image.')}</p>
+		<xi:include href="../../../templates/generic/docs-links.html" />
+		<xi:include href="../../../templates/generic/other-media-sources.html" />
+	      </div>
+        <div class="col-md-3 text-left col-md-offset-1">
+          <h3>${_('Other Downloads')}</h3>
+          <p>
+          ${_('Installation DVD:')}
+          <ul>
+            <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/i386/iso/Fedora-Server-DVD-i386-${global_variables.release['curr_id']}.iso">${_('32-bit %sGB image' % global_variables.iso_size['i386_server_DVD'])}</a></p></li>
+          </ul>
+          </p>
+          <p>
+          ${_('Netinstall Images:')}
+          <ul>
+          <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['curr_id']}.iso">${_('64-bit %sMB image' % global_variables.iso_size['x86_64_server_net'])}</a></p></li>
+          <li><p><a class="server-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Server/i386/iso/Fedora-Server-netinst-i386-${global_variables.release['curr_id']}.iso">${_('32-bit %sMB image' % global_variables.iso_size['i386_server_net'])}</a></p></li>
+          </ul>
+          </p>
+          <h3>${Markup(_('Try Fedora %(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+          <div class="bottom-margin">
+          <py:choose>
+            <py:when test="global_variables.release['curr_state'] == 'Alpha'">
+              <a href="${path}/${lang}/server/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Alpha is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}alpha.png" /></a>
+            </py:when>
+            <py:when test="global_variables.release['curr_state'] == 'Beta'">
+              <a href="${path}/${lang}/server/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Beta is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}beta.png" /></a>
+            </py:when>
+          </py:choose>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

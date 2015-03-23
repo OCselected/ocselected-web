@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../../templates/master.html" />
+  <head>
+    <title>${_('Download Fedora Workstation')}</title>
+  </head>
+  <body id="workstation">
+
+  <xi:include href="../../../templates/workstation/header.html" />
+  <!--! <div class="mymenu navbar-default workstationmenu">
+    <div class="container">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+     <div class="row col-md-8 col-md-offset-2 row col-sm-10 col-sm-offset-1 col-xs-12">
+        <div class="collapse navbar-collapse">
+          <ul class="nav nav-tabs nav-justified">
+                <li><a href="../">${_('About')}</a></li>
+                <li><a href="#">${_('Take the Tour')}</a></li>
+                <li class="active"><a href="#">${_('Download')}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <header id="head" class="downloadheader">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-md-offset-5 text-left">
+          <h2>${Markup(_('Download Fedora %(rel)s Workstation')) % {'rel':global_variables.release['curr_id']}}</h2>
+            <p><a class="btn btn-success ws-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/x86_64/iso/Fedora-Live-Workstation-x86_64-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso" role="button">${_('Download')}</a></p>
+            <h5>${Markup(_('64-Bit %sGB Live Image')) % global_variables.iso_size['x86_64_workstation']}</h5>
+        </div>
+      </div>
+    </div>
+  </header>
+    <div class="container download-container top-space">
+      <div class="row">
+        <div class="col-md-8 text-left bottom-space">
+	        <h3>${_('What is a Live image?')}</h3>
+	        <p>${_('The Fedora Workstation Live image allows you to make media for your computer that provides a complete, running Fedora Workstation you can run right away. You can use the Live image to test and play with Fedora without making changes to your hard disk. When you are ready, you can install Fedora to your hard disk from the Live image.')}</p>
+		<p>${_('To use this image, you need a drive that can create or "burn" DVDs, or a USB flash drive at least as big as the image.')}</p>
+		<xi:include href="../../../templates/generic/docs-links.html" />
+		<xi:include href="../../../templates/generic/other-media-sources.html" />
+	      </div>
+        <div class="col-md-3 text-left col-md-offset-1">
+          <h3>${_('Other Downloads')}</h3>
+          <p><a class="ws-download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Workstation/i386/iso/Fedora-Live-Workstation-i686-${global_variables.release['curr_id']}-${global_variables.release['RC_gold']}.iso">${_('32-bit %sGB Live image' % global_variables.iso_size['i386_workstation'])}</a></p>
+          <h3>${Markup(_('Try Fedora %(rel)s %(state)s')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+          <div class="bottom-margin">
+          <py:choose>
+      			<py:when test="global_variables.release['curr_state'] == 'Alpha'">
+      				<a href="${path}/${lang}/workstation/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Alpha is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}alpha.png" /></a>
+      			</py:when>
+      			<py:when test="global_variables.release['curr_state'] == 'Beta'">
+      			    <a href="${path}/${lang}/workstation/prerelease"><img alt="Fedora ${global_variables.release['next_id']} Beta is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}beta.png" /></a>
+            </py:when>
+          </py:choose>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
