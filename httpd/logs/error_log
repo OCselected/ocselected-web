@@ -1,0 +1,2 @@
+[Wed Apr 01 16:30:40.235820 2015] [core:emerg] [pid 10496] (22)Invalid argument: AH00024: Couldn't set permissions on the rewrite-map mutex; check User and Group directives
+AH00016: Configuration Failed
