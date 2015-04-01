@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-04-01 16:28+0800\n"
+"POT-Creation-Date: 2015-03-23 10:48+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,18 +140,18 @@ msgid ""
 msgstr ""
 
 #: data/content/index.html:68
-msgid "Freedom. Features. "
+msgid "Freedom. Friends. Features. First."
 msgstr ""
 
 #: data/content/index.html:72
 msgid ""
-" is always free for anyone to use, modify, and distribute. It is built "
-"and used by people across the globe who work together as a community: the"
-" OCselected Project."
+"Fedora is always free for anyone to use, modify, and distribute. It is "
+"built and used by people across the globe who work together as a "
+"community: the Fedora Project."
 msgstr ""
 
 #: data/content/index.html:147
-msgid "Keep up to date with Open Cloud Selected"
+msgid "Keep up to date with Fedora"
 msgstr ""
 
 #: data/content/index.html:148
@@ -162,27 +162,27 @@ msgid ""
 msgstr ""
 
 #: data/content/index.html:151
-msgid "OCselected Documentation"
+msgid "Fedora Documentation"
 msgstr ""
 
 #: data/content/index.html:152
 #, python-format
 msgid ""
 "Check out the <a href=\"%s\">Release Notes</a> for detailed information "
-"on the current release. To learn more about using Open Cloud and details "
-"such as system requirements, see the <a href=\"%s\">official "
+"on the current release. To learn more about using Fedora and details such"
+" as system requirements, see the <a href=\"%s\">official "
 "documentation</a>."
 msgstr ""
 
 #: data/content/index.html:157
-msgid "Looking for more Project?"
+msgid "Looking for more Fedora?"
 msgstr ""
 
 #: data/content/index.html:158
 #, python-format
 msgid ""
-"The OCselected community also to specific requirements. Browse them at "
-"the <a href=\"%s\">Project page</a>."
+"The Fedora community also to specific requirements. Browse them at the <a"
+" href=\"%s\">Spins page</a>."
 msgstr ""
 
 #: data/content/index.html:161
@@ -214,65 +214,65 @@ msgstr ""
 #: data/content/sponsors.html:31
 #, python-format
 msgid ""
-"<a href=\"%s\">OCselected, Inc.</a> is the primary sponsor for the "
-"OCselected Project. It provides the OCselected project with a wide "
-"variety of resources, including full-time employee support, "
-"infrastructure hardware and bandwidth, event funding, and legal counsel."
+"<a href=\"%s\">Red Hat, Inc.</a> is the primary sponsor for the Fedora "
+"Project. Red Hat provides the Fedora project with a wide variety of "
+"resources, including full-time employee support, infrastructure hardware "
+"and bandwidth, event funding, and legal counsel."
 msgstr ""
 
 #: data/content/sponsors.html:38
 msgid ""
-"The OCselected Project is also grateful to the following sponsors for "
+"The Fedora Project is also grateful to the following sponsors for "
 "providing substantial support:"
 msgstr ""
 
-#: data/content/sponsors.html:91
+#: data/content/sponsors.html:99
 msgid ""
-"OCselected Infrastructure would like to thank the following open-source "
+"Fedora Infrastructure would like to thank the following open-source "
 "projects for their software (alphabetically ordered):"
 msgstr ""
 
-#: data/content/sponsors.html:93
+#: data/content/sponsors.html:101
 msgid "Askbot"
 msgstr ""
 
-#: data/content/sponsors.html:94
+#: data/content/sponsors.html:102
 msgid "Ansible"
 msgstr ""
 
-#: data/content/sponsors.html:95
+#: data/content/sponsors.html:103
 msgid "Git"
 msgstr ""
 
-#: data/content/sponsors.html:96
+#: data/content/sponsors.html:104
 msgid "Nagios"
 msgstr ""
 
-#: data/content/sponsors.html:97
+#: data/content/sponsors.html:105
 msgid "GNU Mailman"
 msgstr ""
 
-#: data/content/sponsors.html:98
+#: data/content/sponsors.html:106
 msgid "Mediawiki"
 msgstr ""
 
-#: data/content/sponsors.html:99
+#: data/content/sponsors.html:107
 msgid "Python"
 msgstr ""
 
-#: data/content/sponsors.html:100
+#: data/content/sponsors.html:108
 msgid "Trac"
 msgstr ""
 
-#: data/content/sponsors.html:101
+#: data/content/sponsors.html:109
 msgid "TurboGears"
 msgstr ""
 
-#: data/content/sponsors.html:110
-msgid "Interested in sponsoring something for OCselected?"
+#: data/content/sponsors.html:118
+msgid "Interested in sponsoring something for Fedora?"
 msgstr ""
 
-#: data/content/sponsors.html:111
+#: data/content/sponsors.html:119
 #, python-format
 msgid ""
 "Contact <a href=\"%(mail_url)s\">admin@ocselected.org</a> or stop by "
