@@ -48,15 +48,10 @@ data/templates/translations.html: po/LINGUAS
 msgmerge: $(wildcard po/*.po)
 
 pushpot:
-	zanata push $(subst po/,,$(POT_FILE))
+	tx push -s  
 
 pullpos:
-	zanata pull --no-copytrans
-
-# The next call get the Zanata resource from the config file,
-# and if it exists rsync the POs
-syncpos:
-	@$(call sync,$(RESOURCE_NAME),$(shell cat zanata.xml | sed -n 's,.*project-version>\(.*\)<.*,\1,p'))
+	tx -d pull -l zh_CN 
 
 $(HTTPDDIR)/conf/httpd.conf: $(HTTPDDIR)/conf/httpd.conf.in
 	cp $(HTTPDDIR)/conf/httpd.conf.in $(HTTPDDIR)/conf/httpd.conf
