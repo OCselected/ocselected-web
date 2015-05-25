@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.com
+
+[ocselected-web.docsocselectedorg]
+file_filter = po/<lang>.po
+source_file = po/docs.ocselected.org.pot
+source_lang = en
+type = PO
+

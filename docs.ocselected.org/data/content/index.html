@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('OCselected Documents')}</title>
+  </head>
+
+  <body class="home">
+  <xi:include href="../templates/head.html" />
+  <header id="head" class="main-head">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            <h1 class="thin">${_('Open Cloud Selected Documents')}</h1>
+            <h4 class="thin">${_('Documentation is like sex: when it is good, it is very, very good; and when it is bad, it is better than nothing.')}</h4>
+        </div>
+      </div>
+
+      <div class="row bottom-space">
+        <div class="col-sm-4 col-xs-12 highlight productitem workstation">
+          <a href="../${lang}/manual">
+            <div class="productitem-logo">
+                <div class="h-caption greyscale"></div>
+                <div class="h-caption color"></div>
+            </div>
+            <h4 class="uppercase">${_('Manual')}</h4>
+            <div class="h-body text-justify">
+              <p>${_('We thinks Open Cloud need better manual, especially Chinese.')}</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-4 col-xs-12 highlight productitem server">
+          <a href="../books">
+            <div class="productitem-logo">
+                <div class="h-caption greyscale"></div>
+                <div class="h-caption color"></div>
+            </div>
+            <h4 class="uppercase">${_('books')}</h4>
+            <div class="h-body text-justify">
+              <p>${_('if you want to Open Cloud more clean, You need read some books.')}</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-4 col-xs-12 highlight productitem cloud">
+          <a href="../${lang}/Case">
+            <div class="productitem-logo">
+                <div class="h-caption greyscale"></div>
+                <div class="h-caption color"></div>
+            </div>
+            <h4 class="uppercase">${_('Case')}</h4>
+            <div class="h-body text-justify">
+              <p>${_('Whatever, Some case study is better practice.')}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+
+
+</body>
+</html>
