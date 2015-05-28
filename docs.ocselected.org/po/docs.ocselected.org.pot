@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-05-25 17:07+0800\n"
+"POT-Creation-Date: 2015-05-28 22:15+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgid ""
 "when it is bad, it is better than nothing."
 msgstr ""
 
-#: data/content/index.html:29
+#: data/content/index.html:29 data/templates/productselector-manual.html:12
 msgid "Manual"
 msgstr ""
 
@@ -47,7 +47,7 @@ msgstr ""
 msgid "if you want to Open Cloud more clean, You need read some books."
 msgstr ""
 
-#: data/content/index.html:53
+#: data/content/index.html:53 data/templates/productselector-case.html:13
 msgid "Case"
 msgstr ""
 
@@ -69,6 +69,69 @@ msgstr ""
 
 #: data/content/books/index.html:24
 msgid "Download PDF"
+msgstr ""
+
+#: data/content/manual/index.html:8
+msgid "OCselected User Manuals"
+msgstr ""
+
+#: data/content/manual/index.html:18
+msgid "We Selected Stable,Powerful,OpenSource Cloud product"
+msgstr ""
+
+#: data/content/manual/index.html:19
+msgid "and Main we provide good Chinese Documents"
+msgstr ""
+
+#: data/content/manual/index.html:30
+msgid "oVirt User Manuals"
+msgstr ""
+
+#: data/content/manual/index.html:31
+#, python-format
+msgid "<a href=\"%s\">Administrator Guide"
+msgstr ""
+
+#: data/content/manual/index.html:34
+msgid "OpenStack User Manuals"
+msgstr ""
+
+#: data/content/manual/index.html:35
+#, python-format
+msgid "<a href=\"%s\">Installtion Guide"
+msgstr ""
+
+#: data/content/manual/index.html:36
+#, python-format
+msgid "<a href=\"%s\">Archecture Design"
+msgstr ""
+
+#: data/content/manual/index.html:37
+#, python-format
+msgid "<a href=\"%s\">High Available Guide"
+msgstr ""
+
+#: data/content/manual/index.html:38
+#, python-format
+msgid "<a href=\"%s\">Image Guide"
+msgstr ""
+
+#: data/content/manual/index.html:43
+msgid "Fuel User Manuals"
+msgstr ""
+
+#: data/content/manual/index.html:44
+#, python-format
+msgid "<a href=\"%s\">Fuel Documents"
+msgstr ""
+
+#: data/content/manual/index.html:47
+msgid "ManageIQ User Manuals"
+msgstr ""
+
+#: data/content/manual/index.html:48
+#, python-format
+msgid "<a href=\"%s\">Control Guide"
 msgstr ""
 
 #: data/templates/footer.html:14
@@ -132,7 +195,7 @@ msgid "OCselected SIGs"
 msgstr ""
 
 #: data/templates/footer.html:84
-msgid "OCselected is sponsored by xxx."
+msgid "OCselected is sponsored by OCselected.com."
 msgstr ""
 
 #: data/templates/footer.html:92
@@ -141,5 +204,25 @@ msgstr ""
 
 #: data/templates/footer.html:96
 msgid "OK"
+msgstr ""
+
+#: data/templates/moretoocselected.html:12
+msgid "There's more to"
+msgstr ""
+
+#: data/templates/productselector-book.html:12
+msgid "Books"
+msgstr ""
+
+#: data/templates/productselector-book.html:13
+msgid "OCselected product about Open Virtualization Developer Guide,It's Free."
+msgstr ""
+
+#: data/templates/productselector-case.html:14
+msgid "This is real custorm's Use Case! Maybe guide for you or helpfull."
+msgstr ""
+
+#: data/templates/productselector-manual.html:13
+msgid "This is all about Open Cloud User manuals."
 msgstr ""
 
