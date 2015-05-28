@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('OCselected User Manuals')}</title>
+  </head>
+  <body id="manual">
+
+  <xi:include href="../../templates/head.html" />
+
+  <header id="head">
+    <div class="container cloud">
+      <div class="row">
+        <div class="col-sm-6 col-md-offset-1 text-left">
+          <h1>${_('We Selected Stable,Powerful,OpenSource Cloud product')}</h1>
+          <h4>${_('and Main we provide good Chinese Documents')}</h4>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <!-- 文档的链接内容 -->
+  <!-- container -->
+  <div class="container top-space">
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-2">
+        <h4>${_('oVirt User Manuals')}</h4>
+        <p class="thin">${Markup(_('&lt;a href="%s"&gt;Administrator Guide&lt;/a&gt;') % ('http://docs.ocselected.org/ovirt-manuals/administration-guide'))}</p>
+      </div>
+      <div class="col-sm-4">
+        <h4>${_('OpenStack User Manuals')}</h4>
+        <p class="thin">${Markup(_('&lt;a href="%s"&gt;Installtion Guide&lt;/a&gt;') % ('http://docs.ocselected.org/openstack-manuals/kilo/install'))}</p>
+        <p class="thin">${Markup(_('&lt;a href="%s"&gt;Archecture Design&lt;/a&gt;') % ('http://docs.ocselected.org/openstack-manual/kilo/arch-design'))}</p>
+        <p class="thin">${Markup(_('&lt;a href="%s"&gt;High Available Guide&lt;/a&gt;') % ('http://docs.ocselected.org/openstack-manuals/kilo/high-availability-guide/'))}</p>
+        <p class="thin">${Markup(_('&lt;a href="%s"&gt;Image Guide&lt;/a&gt;') % ('http://docs.ocselected.org/openstack-manuals/kilo/image-guide'))}</p>
+      </div>
+    </div> <!-- /row -->
+    <div class="row  bottom-space">
+      <div class="col-sm-4 col-sm-offset-2">
+        <h4>${_('Fuel User Manuals')}</h4>
+        <p class="thin">${Markup(_('&lt;a href="%s"&gt;Fuel Documents&lt;/a&gt;') % ('http://docs.ocselected.org/openstack-manuals/kilo/fuel-docs/'))}</p>
+      </div>
+      <div class="col-sm-4">
+        <h4>${_('ManageIQ User Manuals')}</h4>
+        <p class="thin">${Markup(_('&lt;a href="%s"&gt;Control Guide&lt;/a&gt;') % ('http://docs.ocselected.org/manageiq-documents/control-guide'))}</p>
+      </div>
+    </div> <!-- /row -->
+</div>  <!-- /container -->
+
+
+  <!-- Links to other products -->
+  <xi:include href="../../templates/moretoocselected.html" />
+  <div class="bottom-products text-center clearfix">
+	<div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-2 col-xs-12 product-selector">
+            <xi:include href="../../templates/productselector-book.html" />
+        </div>
+        <div class="col-sm-4 col-xs-12 product-selector bottom-space">
+            <xi:include href="../../templates/productselector-case.html" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Links to other products-->
+
+  </body>
+</html>
