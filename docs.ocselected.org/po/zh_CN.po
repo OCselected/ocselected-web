@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ocselected-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-05-25 17:07+0800\n"
-"PO-Revision-Date: 2015-05-25 09:13+0000\n"
+"POT-Creation-Date: 2015-05-29 16:09+0800\n"
+"PO-Revision-Date: 2015-05-29 08:14+0000\n"
 "Last-Translator: johnwoo_lee <lijiangsheng1@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/ocselected-web/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -31,15 +31,15 @@ msgstr "开放云精选文档"
 msgid ""
 "Documentation is like sex: when it is good, it is very, very good; and when "
 "it is bad, it is better than nothing."
-msgstr ""
+msgstr "文档就像性爱:当它很好时，那种感觉非常的棒；但是当写的很烂时，还不如没有。"
 
-#: data/content/index.html:29
+#: data/content/index.html:29 data/templates/productselector-manual.html:12
 msgid "Manual"
 msgstr "手册"
 
 #: data/content/index.html:31
 msgid "We thinks Open Cloud need better manual, especially Chinese."
-msgstr ""
+msgstr "我们以为开放云需要更多好的手册，尤其是中文版的。"
 
 #: data/content/index.html:41
 msgid "books"
@@ -47,15 +47,15 @@ msgstr "书籍"
 
 #: data/content/index.html:43
 msgid "if you want to Open Cloud more clean, You need read some books."
-msgstr ""
+msgstr "如果你想清晰而系统的了解开放云，那么你就需要读一些书籍。"
 
-#: data/content/index.html:53
+#: data/content/index.html:53 data/templates/productselector-case.html:13
 msgid "Case"
 msgstr "案例"
 
 #: data/content/index.html:55
 msgid "Whatever, Some case study is better practice."
-msgstr ""
+msgstr "无论什么，有了案例就有了好的最佳实践参考。"
 
 #: data/content/books/index.html:8
 msgid "OCselected Books"
@@ -73,6 +73,69 @@ msgstr "开发者指南"
 msgid "Download PDF"
 msgstr "下载PDF"
 
+#: data/content/manual/index.html:8
+msgid "OCselected User Manuals"
+msgstr "开放云用户手册"
+
+#: data/content/manual/index.html:18
+msgid "We Selected Stable,Powerful,OpenSource Cloud product"
+msgstr "我们精心选择稳定、强大、开源的云计算产品"
+
+#: data/content/manual/index.html:19
+msgid "and Main we provide good Chinese Documents"
+msgstr "主要是我们提供优秀的中文文档"
+
+#: data/content/manual/index.html:30
+msgid "oVirt User Manuals"
+msgstr "oVirt 用户手册"
+
+#: data/content/manual/index.html:31
+#, python-format
+msgid "<a href=\"%s\">Administrator Guide</a>"
+msgstr "<a href=\"%s\">管理员手册</a>"
+
+#: data/content/manual/index.html:34
+msgid "OpenStack User Manuals"
+msgstr "OpenStack 用户手册"
+
+#: data/content/manual/index.html:35
+#, python-format
+msgid "<a href=\"%s\">Installtion Guide</a>"
+msgstr "<a href=\"%s\">安装指南</a>"
+
+#: data/content/manual/index.html:36
+#, python-format
+msgid "<a href=\"%s\">Archecture Design</a>"
+msgstr "<a href=\"%s\">架构设计</a>"
+
+#: data/content/manual/index.html:37
+#, python-format
+msgid "<a href=\"%s\">High Available Guide</a>"
+msgstr "<a href=\"%s\">高可用指南</a>"
+
+#: data/content/manual/index.html:38
+#, python-format
+msgid "<a href=\"%s\">Image Guide</a>"
+msgstr "<a href=\"%s\">镜像指南</a>"
+
+#: data/content/manual/index.html:43
+msgid "Fuel User Manuals"
+msgstr "Fuel 用户手册"
+
+#: data/content/manual/index.html:44
+#, python-format
+msgid "<a href=\"%s\">Fuel Documents</a>"
+msgstr "<a href=\"%s\">Fuel 文档</a>"
+
+#: data/content/manual/index.html:47
+msgid "ManageIQ User Manuals"
+msgstr "ManageIQ 用户手册"
+
+#: data/content/manual/index.html:48
+#, python-format
+msgid "<a href=\"%s\">Control Guide</a>"
+msgstr "<a href=\"%s\">掌控指南</a>"
+
 #: data/templates/footer.html:14
 msgid "About"
 msgstr "关于"
@@ -87,7 +150,7 @@ msgstr "赞助商"
 
 #: data/templates/footer.html:19
 msgid "OCselected Magazine"
-msgstr ""
+msgstr "开放云精选杂志"
 
 #: data/templates/footer.html:36
 msgid "Download"
@@ -95,23 +158,23 @@ msgstr "下载"
 
 #: data/templates/footer.html:39
 msgid "Get oVirt"
-msgstr ""
+msgstr "试用oVirt"
 
 #: data/templates/footer.html:40
 msgid "Get Fuel OpenStack"
-msgstr ""
+msgstr "试用Fuel OpenStack"
 
 #: data/templates/footer.html:41
 msgid "Get Mesos"
-msgstr ""
+msgstr "试用Mesos"
 
 #: data/templates/footer.html:50
 msgid "Support"
-msgstr ""
+msgstr "技术支持"
 
 #: data/templates/footer.html:53
 msgid "Get Help"
-msgstr ""
+msgstr "获得帮助"
 
 #: data/templates/footer.html:57
 msgid "Installation Guide"
@@ -119,7 +182,7 @@ msgstr "安装手册"
 
 #: data/templates/footer.html:63
 msgid "Join"
-msgstr ""
+msgstr "加入我们"
 
 #: data/templates/footer.html:66
 msgid "Join OCselected"
@@ -131,11 +194,11 @@ msgstr "博客聚合"
 
 #: data/templates/footer.html:68
 msgid "OCselected SIGs"
-msgstr ""
+msgstr "开放云精选兴趣小组"
 
 #: data/templates/footer.html:84
-msgid "OCselected is sponsored by xxx."
-msgstr ""
+msgid "OCselected is sponsored by OCselected.com."
+msgstr "社区由开放云精选所赞助。"
 
 #: data/templates/footer.html:92
 msgid "Change Language"
@@ -144,3 +207,24 @@ msgstr "变更语言"
 #: data/templates/footer.html:96
 msgid "OK"
 msgstr "好"
+
+#: data/templates/moretoocselected.html:12
+msgid "There's more to"
+msgstr "更多"
+
+#: data/templates/productselector-book.html:12
+msgid "Books"
+msgstr "图书"
+
+#: data/templates/productselector-book.html:13
+msgid ""
+"OCselected product about Open Virtualization Developer Guide,It's Free."
+msgstr "《开放虚拟化开发者指南》，开放云精选出品，可自由阅读和传播。"
+
+#: data/templates/productselector-case.html:14
+msgid "This is real custorm's Use Case! Maybe guide for you or helpfull."
+msgstr "这是真正的客户使用案例，或许为你提供向导，或者为你提供参考。"
+
+#: data/templates/productselector-manual.html:13
+msgid "This is all about Open Cloud User manuals."
+msgstr "这里有关于开放云精选的所有用户手册。"
