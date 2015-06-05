@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-05-31 18:14+0800\n"
+"POT-Creation-Date: 2015-06-05 23:10+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,96 +53,6 @@ msgstr ""
 
 #: data/content/index.html:55
 msgid "Whatever, Some case study is better practice."
-msgstr ""
-
-#: data/content/sponsors.html:8 data/content/sponsors.html:18
-msgid "OCselected Sponsors"
-msgstr ""
-
-#: data/content/sponsors.html:20
-msgid ""
-"The OCselected Project is proud to have the following organizations and "
-"personal as sponsors..."
-msgstr ""
-
-#: data/content/sponsors.html:29
-msgid "Primary Sponsor"
-msgstr ""
-
-#: data/content/sponsors.html:31
-#, python-format
-msgid ""
-"<a href=\"%s\">OCselected, Inc.</a> is the primary sponsor for the "
-"OCselected Project. It provides the OCselected project with a wide "
-"variety of resources, including full-time employee support, "
-"infrastructure hardware and bandwidth, event funding, and legal counsel."
-msgstr ""
-
-#: data/content/sponsors.html:38
-msgid ""
-"The OCselected Project is also grateful to the following sponsors for "
-"providing substantial support:"
-msgstr ""
-
-#: data/content/sponsors.html:97
-msgid "“I hope  —OCselected will be better! ”"
-msgstr ""
-
-#: data/content/sponsors.html:98
-msgid "OpenSource developer at Eayun"
-msgstr ""
-
-#: data/content/sponsors.html:110
-msgid ""
-"OCselected Infrastructure would like to thank the following open-source "
-"projects for their software (alphabetically ordered):"
-msgstr ""
-
-#: data/content/sponsors.html:112
-msgid "Askbot"
-msgstr ""
-
-#: data/content/sponsors.html:113
-msgid "Ansible"
-msgstr ""
-
-#: data/content/sponsors.html:114
-msgid "Git"
-msgstr ""
-
-#: data/content/sponsors.html:115
-msgid "Nagios"
-msgstr ""
-
-#: data/content/sponsors.html:116
-msgid "GNU Mailman"
-msgstr ""
-
-#: data/content/sponsors.html:117
-msgid "Mediawiki"
-msgstr ""
-
-#: data/content/sponsors.html:118
-msgid "Python"
-msgstr ""
-
-#: data/content/sponsors.html:119
-msgid "Trac"
-msgstr ""
-
-#: data/content/sponsors.html:120
-msgid "TurboGears"
-msgstr ""
-
-#: data/content/sponsors.html:129
-msgid "Interested in sponsoring something for OCselected?"
-msgstr ""
-
-#: data/content/sponsors.html:130
-#, python-format
-msgid ""
-"Contact <a href=\"%(mail_url)s\">admin@ocselected.org</a> or stop by "
-"<strong>#ocselected</strong> on <strong>irc.freenode.net</strong>."
 msgstr ""
 
 #: data/content/books/index.html:8 data/content/case/index.html:8
@@ -219,21 +129,129 @@ msgid "<a href=\"%s\">Image Guide</a>"
 msgstr ""
 
 #: data/content/manual/index.html:43
-msgid "Fuel User Manuals"
+msgid "Mesos Documents"
 msgstr ""
 
 #: data/content/manual/index.html:44
 #, python-format
-msgid "<a href=\"%s\">Fuel Documents</a>"
+msgid "<a href=\"%s\">Mesos architecture</a>"
 msgstr ""
 
 #: data/content/manual/index.html:47
-msgid "ManageIQ User Manuals"
+msgid "Kubernetes Documents"
 msgstr ""
 
 #: data/content/manual/index.html:48
 #, python-format
+msgid "<a href=\"%s\">User Guide</a>"
+msgstr ""
+
+#: data/content/manual/index.html:53
+msgid "Fuel User Manuals"
+msgstr ""
+
+#: data/content/manual/index.html:54
+#, python-format
+msgid "<a href=\"%s\">Fuel Documents</a>"
+msgstr ""
+
+#: data/content/manual/index.html:57
+msgid "ManageIQ User Manuals"
+msgstr ""
+
+#: data/content/manual/index.html:58
+#, python-format
 msgid "<a href=\"%s\">Control Guide</a>"
+msgstr ""
+
+#: data/content/sponsors/index.html:8 data/content/sponsors/index.html:18
+msgid "OCselected Sponsors"
+msgstr ""
+
+#: data/content/sponsors/index.html:20
+msgid ""
+"The OCselected Project is proud to have the following organizations and "
+"personal as sponsors..."
+msgstr ""
+
+#: data/content/sponsors/index.html:29
+msgid "Primary Sponsor"
+msgstr ""
+
+#: data/content/sponsors/index.html:31
+#, python-format
+msgid ""
+"<a href=\"%s\">OCselected, Inc.</a> is the primary sponsor for the "
+"OCselected Project. It provides the OCselected project with a wide "
+"variety of resources, including full-time employee support, "
+"infrastructure hardware and bandwidth, event funding, and legal counsel."
+msgstr ""
+
+#: data/content/sponsors/index.html:38
+msgid ""
+"The OCselected Project is also grateful to the following sponsors for "
+"providing substantial support:"
+msgstr ""
+
+#: data/content/sponsors/index.html:97
+msgid "“I hope  —OCselected will be better! ”"
+msgstr ""
+
+#: data/content/sponsors/index.html:98
+msgid "OpenSource developer at Eayun"
+msgstr ""
+
+#: data/content/sponsors/index.html:110
+msgid ""
+"OCselected Infrastructure would like to thank the following open-source "
+"projects for their software (alphabetically ordered):"
+msgstr ""
+
+#: data/content/sponsors/index.html:112
+msgid "Askbot"
+msgstr ""
+
+#: data/content/sponsors/index.html:113
+msgid "Ansible"
+msgstr ""
+
+#: data/content/sponsors/index.html:114
+msgid "Git"
+msgstr ""
+
+#: data/content/sponsors/index.html:115
+msgid "Nagios"
+msgstr ""
+
+#: data/content/sponsors/index.html:116
+msgid "GNU Mailman"
+msgstr ""
+
+#: data/content/sponsors/index.html:117
+msgid "Mediawiki"
+msgstr ""
+
+#: data/content/sponsors/index.html:118
+msgid "Python"
+msgstr ""
+
+#: data/content/sponsors/index.html:119
+msgid "Trac"
+msgstr ""
+
+#: data/content/sponsors/index.html:120
+msgid "TurboGears"
+msgstr ""
+
+#: data/content/sponsors/index.html:129
+msgid "Interested in sponsoring something for OCselected?"
+msgstr ""
+
+#: data/content/sponsors/index.html:130
+#, python-format
+msgid ""
+"Contact <a href=\"%(mail_url)s\">admin@ocselected.org</a> or stop by "
+"<strong>#ocselected</strong> on <strong>irc.freenode.net</strong>."
 msgstr ""
 
 #: data/templates/footer.html:14

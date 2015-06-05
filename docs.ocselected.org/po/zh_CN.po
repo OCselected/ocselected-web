@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ocselected-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-05-31 18:14+0800\n"
-"PO-Revision-Date: 2015-06-04 04:03+0000\n"
+"POT-Creation-Date: 2015-06-05 23:10+0800\n"
+"PO-Revision-Date: 2015-06-05 15:16+0000\n"
 "Last-Translator: johnwoo_lee <lijiangsheng1@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/ocselected-web/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -56,96 +56,6 @@ msgstr "案例"
 #: data/content/index.html:55
 msgid "Whatever, Some case study is better practice."
 msgstr "无论什么，有了案例就有了好的最佳实践参考。"
-
-#: data/content/sponsors.html:8 data/content/sponsors.html:18
-msgid "OCselected Sponsors"
-msgstr "赞助商"
-
-#: data/content/sponsors.html:20
-msgid ""
-"The OCselected Project is proud to have the following organizations and "
-"personal as sponsors..."
-msgstr "开放云精选项目很荣幸的得到了以下个人和组织的慷慨赞助:"
-
-#: data/content/sponsors.html:29
-msgid "Primary Sponsor"
-msgstr "主要赞助商"
-
-#: data/content/sponsors.html:31
-#, python-format
-msgid ""
-"<a href=\"%s\">OCselected, Inc.</a> is the primary sponsor for the "
-"OCselected Project. It provides the OCselected project with a wide variety "
-"of resources, including full-time employee support, infrastructure hardware "
-"and bandwidth, event funding, and legal counsel."
-msgstr "<a href=\"%s\">OCselected, Inc.</a> 是开放云镜像项目的主要赞助商。它为开放云精选提供了多种资源，如全职的员工支持，硬件基础设施，带宽，活动经费，以及律师。"
-
-#: data/content/sponsors.html:38
-msgid ""
-"The OCselected Project is also grateful to the following sponsors for "
-"providing substantial support:"
-msgstr "开放云精选也得到了以下赞助商的丰厚的馈赠:"
-
-#: data/content/sponsors.html:97
-msgid "“I hope  —OCselected will be better! ”"
-msgstr "\"我希望开放云精选越做越强大！\""
-
-#: data/content/sponsors.html:98
-msgid "OpenSource developer at Eayun"
-msgstr "来自易云的开发者"
-
-#: data/content/sponsors.html:110
-msgid ""
-"OCselected Infrastructure would like to thank the following open-source "
-"projects for their software (alphabetically ordered):"
-msgstr "开放云精选基础设施非常感谢以下开源项目提供的优秀的软件(按字母顺序排列):"
-
-#: data/content/sponsors.html:112
-msgid "Askbot"
-msgstr "Askbot"
-
-#: data/content/sponsors.html:113
-msgid "Ansible"
-msgstr "Ansible"
-
-#: data/content/sponsors.html:114
-msgid "Git"
-msgstr "Git"
-
-#: data/content/sponsors.html:115
-msgid "Nagios"
-msgstr "Nagios"
-
-#: data/content/sponsors.html:116
-msgid "GNU Mailman"
-msgstr "GNU Mailman"
-
-#: data/content/sponsors.html:117
-msgid "Mediawiki"
-msgstr "Mediawiki"
-
-#: data/content/sponsors.html:118
-msgid "Python"
-msgstr "Python"
-
-#: data/content/sponsors.html:119
-msgid "Trac"
-msgstr "Trac"
-
-#: data/content/sponsors.html:120
-msgid "TurboGears"
-msgstr "TurboGears"
-
-#: data/content/sponsors.html:129
-msgid "Interested in sponsoring something for OCselected?"
-msgstr "我们希望得到您的赞助"
-
-#: data/content/sponsors.html:130
-#, python-format
-msgid ""
-"Contact <a href=\"%(mail_url)s\">admin@ocselected.org</a> or stop by "
-"<strong>#ocselected</strong> on <strong>irc.freenode.net</strong>."
-msgstr "联系 <a href=\"%(mail_url)s\">admin@ocselected.org</a>或者到驻扎在<strong>irc.freenode.net</strong>上的频道<strong>#ocselected</strong> 联系我们。"
 
 #: data/content/books/index.html:8 data/content/case/index.html:8
 msgid "OCselected Books"
@@ -221,22 +131,130 @@ msgid "<a href=\"%s\">Image Guide</a>"
 msgstr "<a href=\"%s\">镜像指南</a>"
 
 #: data/content/manual/index.html:43
+msgid "Mesos Documents"
+msgstr "Mesos 文档"
+
+#: data/content/manual/index.html:44
+#, python-format
+msgid "<a href=\"%s\">Mesos architecture</a>"
+msgstr "<a href=\"%s\">Mesos 体系结构</a>"
+
+#: data/content/manual/index.html:47
+msgid "Kubernetes Documents"
+msgstr "Kubernetes 文档"
+
+#: data/content/manual/index.html:48
+#, python-format
+msgid "<a href=\"%s\">User Guide</a>"
+msgstr "<a href=\"%s\">用户指南</a>"
+
+#: data/content/manual/index.html:53
 msgid "Fuel User Manuals"
 msgstr "Fuel 用户手册"
 
-#: data/content/manual/index.html:44
+#: data/content/manual/index.html:54
 #, python-format
 msgid "<a href=\"%s\">Fuel Documents</a>"
 msgstr "<a href=\"%s\">Fuel 文档</a>"
 
-#: data/content/manual/index.html:47
+#: data/content/manual/index.html:57
 msgid "ManageIQ User Manuals"
 msgstr "ManageIQ 用户手册"
 
-#: data/content/manual/index.html:48
+#: data/content/manual/index.html:58
 #, python-format
 msgid "<a href=\"%s\">Control Guide</a>"
 msgstr "<a href=\"%s\">掌控指南</a>"
+
+#: data/content/sponsors/index.html:8 data/content/sponsors/index.html:18
+msgid "OCselected Sponsors"
+msgstr "赞助商"
+
+#: data/content/sponsors/index.html:20
+msgid ""
+"The OCselected Project is proud to have the following organizations and "
+"personal as sponsors..."
+msgstr "开放云精选项目很荣幸的得到了以下个人和组织的慷慨赞助:"
+
+#: data/content/sponsors/index.html:29
+msgid "Primary Sponsor"
+msgstr "主要赞助商"
+
+#: data/content/sponsors/index.html:31
+#, python-format
+msgid ""
+"<a href=\"%s\">OCselected, Inc.</a> is the primary sponsor for the "
+"OCselected Project. It provides the OCselected project with a wide variety "
+"of resources, including full-time employee support, infrastructure hardware "
+"and bandwidth, event funding, and legal counsel."
+msgstr "<a href=\"%s\">OCselected, Inc.</a> 是开放云镜像项目的主要赞助商。它为开放云精选提供了多种资源，如全职的员工支持，硬件基础设施，带宽，活动经费，以及律师。"
+
+#: data/content/sponsors/index.html:38
+msgid ""
+"The OCselected Project is also grateful to the following sponsors for "
+"providing substantial support:"
+msgstr "开放云精选也得到了以下赞助商的丰厚的馈赠:"
+
+#: data/content/sponsors/index.html:97
+msgid "“I hope  —OCselected will be better! ”"
+msgstr "\"我希望开放云精选越做越强大！\""
+
+#: data/content/sponsors/index.html:98
+msgid "OpenSource developer at Eayun"
+msgstr "来自易云的开发者"
+
+#: data/content/sponsors/index.html:110
+msgid ""
+"OCselected Infrastructure would like to thank the following open-source "
+"projects for their software (alphabetically ordered):"
+msgstr "开放云精选基础设施非常感谢以下开源项目提供的优秀的软件(按字母顺序排列):"
+
+#: data/content/sponsors/index.html:112
+msgid "Askbot"
+msgstr "Askbot"
+
+#: data/content/sponsors/index.html:113
+msgid "Ansible"
+msgstr "Ansible"
+
+#: data/content/sponsors/index.html:114
+msgid "Git"
+msgstr "Git"
+
+#: data/content/sponsors/index.html:115
+msgid "Nagios"
+msgstr "Nagios"
+
+#: data/content/sponsors/index.html:116
+msgid "GNU Mailman"
+msgstr "GNU Mailman"
+
+#: data/content/sponsors/index.html:117
+msgid "Mediawiki"
+msgstr "Mediawiki"
+
+#: data/content/sponsors/index.html:118
+msgid "Python"
+msgstr "Python"
+
+#: data/content/sponsors/index.html:119
+msgid "Trac"
+msgstr "Trac"
+
+#: data/content/sponsors/index.html:120
+msgid "TurboGears"
+msgstr "TurboGears"
+
+#: data/content/sponsors/index.html:129
+msgid "Interested in sponsoring something for OCselected?"
+msgstr "我们希望得到您的赞助"
+
+#: data/content/sponsors/index.html:130
+#, python-format
+msgid ""
+"Contact <a href=\"%(mail_url)s\">admin@ocselected.org</a> or stop by "
+"<strong>#ocselected</strong> on <strong>irc.freenode.net</strong>."
+msgstr "联系 <a href=\"%(mail_url)s\">admin@ocselected.org</a>或者到驻扎在<strong>irc.freenode.net</strong>上的频道<strong>#ocselected</strong> 联系我们。"
 
 #: data/templates/footer.html:14
 msgid "About"
