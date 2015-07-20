@@ -168,6 +168,9 @@ $wgGroupPermissions['super']['userrights'] = true;
 require_once "$IP/extensions/Mpdf/Mpdf.php";
 $wgMpdfTab=true;
 
+# enable show external picture
+$wgAllowExternalImages=true;
+
 ## Feed DiffCutoff
 $wgFeedDiffCutoff = 65536;
 
